@@ -13,11 +13,23 @@ Published at April 5 of 2020, updated at May 28 of 2021.
 - Need root access to create and run container;
 - OCI compatibility to pay attention?
 
+## References
+
+- [systemd-nspawn manual][manual]
+- [systemd-nspawn - ArchWiki][archwiki]
+
+[manual]: https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html
+[archwiki]: https://wiki.archlinux.org/title/Systemd-nspawn
+
 ## Choose Distribution
 
-One could install basically almost any modern Linux distribution into a container, the tools and instructions depend on the distributions of both host and container.
+One could install basically almost any modern Linux distribution into a container,
+the tools and instructions depend on the distributions of both host and container.
 
-I've tried Arch Linux and Ubuntu 18.04 containers on my desktop running Arch Linux. For more examples, refer to systemd's documentations listed at the end of this article.
+I've tried Arch Linux and Ubuntu 18.04 containers on my desktop running Arch Linux.
+For more examples, refer to [examples][examples] in the manual.
+
+[examples]: https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html#Examples
 
 ### Arch Linux Container
 
@@ -52,32 +64,42 @@ About the last `pacstrap` command:
 
 For `$bionic_repo_url`, one could select a suitable mirror from [Launchpad](https://launchpad.net/ubuntu/+archivemirrors).
 
-Command `debootstrap` should finish with `I: Base system installed successfully`. If last output is `E: Couldn't download packages:...`, just run it again to complete installation.
+Command `debootstrap` should finish with `I: Base system installed successfully`.
+If last output is `E: Couldn't download packages:...`, just run it again to complete installation.
 
-## Startup Container
+## Configure and Run
 
-After acquiring a directory of minimal installation of distribution, one can use command `systemd-nspawn -D $container_name` to start up the container, `-D` stands for `--directory=`.
-
-## Configure Container
+After acquiring a directory of minimal installation of distribution,
+one can use command `systemd-nspawn -D $container_name` to start up the container,
+`-D` stands for `--directory=`.
 
 There are two easy and full-featured methods to configure a container:
 
 - Options append to `systemd-nspawn` command;
 - Configurations written in `/etc/systemd/nspawn/$container_name.nspawn` file.
 
-Choose either one. **Do not mix both**, unless you completely understand the precedence mechanism inside.
+At first I did try with configuration files, then I realized that,
+it would be much more flexible and less hard-coded to run command in shell scripts.
 
-My personal usage is running container directly into its only target application, wrapping command options into a shell script is more suitable and flexible in this case.
+### Environment Variables
 
-If you want a common container that run several applications, it's considered necessary to run it as a background service along with host boots. A set of configurations is better for maintenance in this situation.
+`--set-env=`, `-E` in command options or `Environment=` in `[Exec]` section of configurations.
 
-###  Host Filesystem Access Control
+## Access Control
+
+### Network
+
+No command option needed, or `VirtualEthernet=no` in `[Network]` section of configurations.
+
+### Filesystem
 
 By default a container has no access to host filesystem.
 
-`--bind=` in command options or `Bind=` in `[Files]` section of configurations; `--bind-ro=` or `BindReadOnly=` for read-only access.
+Mount host path with `--bind=` in command options or `Bind=` in `[Files]` section of configurations;
+`--bind-ro=` or `BindReadOnly=` for read-only access.
 
-These options could be used multiple times, so that you may expose as many files/folders to container as you want. I prefer to allow read-only access as long as it works.
+These options could be used multiple times, so that you may expose as many files/folders to container as you want.
+I recommend allowing read-only access as long as it works.
 
 I'll show several simple use cases below, with basic `--bind=`, other forms are similar.
 
@@ -100,15 +122,54 @@ $ container_path=/absolute/path/inside/container
 > --bind=$host_path:$container_path
 ```
 
-To allow one-time access, you could use an empty string for host path: `--bind=:$container_path`. systemd-nspawn will create a temporary folder for container below the host's `/var/tmp` directory, and remove it automatically when container is shut down.
+To allow one-time access, you could use an empty string for host path: `--bind=:$container_path`.
+systemd-nspawn will create a temporary folder for container below the host's `/var/tmp` directory,
+and remove it automatically when container is shut down.
 
-By default, a folder will be bind-mounted recursively. To allow access to particular path without sub-directories below it, you could append mount option: `--bind=$host_path:$container_path:norbind`.
+By default, a folder will be bind-mounted recursively.
+To allow access to particular path without sub-directories below it,
+you could append mount option: `--bind=$host_path:$container_path:norbind`.
 
-### Environment Variables
+### Devices
 
-`--set-env=`, `-E` in command options or `Environment=` in `[Exec]` section of configurations.
+For quick and full access, mount the whole `/dev/` directory on host to container.
 
-## Access to Host X Server for GUI
+For more fine-grained access control, consider what devices does app really need to run well,
+and which files/directories under `/dev/` are the [devices allocated][linux-kernel-doc] to mount.
+
+[linux-kernel-doc]: https://www.kernel.org/doc/html/latest/admin-guide/devices.html "Linux allocated devices (4.x+ version) - The Linux Kernel documentation"
+
+Here is what I understood for my own usage:
+
+| Device File    | Access to                           |
+| -------------- | ----------------------------------- |
+| /dev/dri/card0 | First graphics card of Intel or AMD |
+| /dev/nvidia0   | First graphics card of NVIDIA       |
+| /dev/shm       | Shared memory                       |
+| /dev/input/js0 | First joystick                      |
+
+Mounting device directory/file is not enough,
+you also need to grant corresponding access to specific device nodes by [`DeviceAllow=`][device-allow] property.
+
+[device-allow]: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#DeviceAllow=
+
+To specific device node, use `/dev/full/path/to/device` as specifier;
+for a group of device nodes, run `cat /proc/devices` to check out device group list:
+- `char-` prefix for character devices;
+- `block-` prefix for block devices.
+
+For access control:
+- `r` for reading;
+- `w` for writing;
+- `m` for creating device nodes.
+
+For example, my AMD graphic card and joysticks:
+
+```bash
+--bind=/dev/dri/ --property=DeviceAllow='char-drm rw' # Graphic cards
+--bind=/dev/input/ --property=DeviceAllow='char-input r' # Joysticks
+```
+### Xorg
 
 Pass X server temporary directory and `DISPLAY` environment variable on host to container:
 
@@ -126,9 +187,11 @@ BindReadOnly=/tmp/.X11-unix/
 
 (Run `echo $DISPLAY` to see its value, which is usually `:0`.)
 
-### X Authority
+#### X Authority
 
-As far as I experienced, if run GUI application as the same user as host, one **may not need** to handle the authority stuff. So if window works fine after instructions above, just skip this step.
+As far as I experienced, if run GUI application as the same user as host,
+one **may not need** to handle the authority stuff. So if window shows up after instructions above,
+just skip this step.
 
 ```console
 $ auth_file=/tmp/${container_name}_xauth
@@ -141,43 +204,14 @@ $ xauth nextract - "$DISPLAY" | sed -e 's/^..../ffff/' | xauth -f "$auth_file" n
 > --set-env=XAUTHORITY="$auth_file"
 ```
 
-## Host Device Access
-
-For quick and full access, bind the whole `/dev/` directory on host to container.
-
-For more fine-grained access control, one need understand what devices does target app in container really need to run well, and which files under `/dev/` are the [devices allocated][linux-kernel-doc] to.
-
-[linux-kernel-doc]: https://www.kernel.org/doc/html/latest/admin-guide/devices.html "Linux allocated devices (4.x+ version) - The Linux Kernel documentation"
-
-Here is what I understood for my own usage:
-
-| Device File    | Access to                           |
-| -------------- | ----------------------------------- |
-| /dev/dri/card0 | First graphics card of Intel or AMD |
-| /dev/nvidia0   | First graphics card of NVIDIA       |
-| /dev/shm       | Shared memory                       |
-| /dev/input/js0 | First joystick                      |
-
-Mounting device directory/file is not enough, you also need to grant corresponding access to specific device nodes by [`DeviceAllow=` property][device-allow].
-
-[device-allow]: https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html#DeviceAllow=
-
-For example, my AMD graphic card and joysticks:
-
-```
---bind=/dev/dri/ --property=DeviceAllow='char-drm rw' # Graphic cards
---bind=/dev/input/ --property=DeviceAllow='char-input r' # Joysticks
-```
-
-## Host Network Access
-
-No command option needed, or `VirtualEthernet=no` in `[Network]` section of configurations.
-
 ## Prepare Application
 
-Startup the container, install your application, create an unprivileged user then run it for test. If it doesn't work as expected, go back to configure container out.
+Startup the container, install your application, create an unprivileged user then run it for test.
+If it doesn't work as expected, go back to configure container out.
 
-## Tray Icon through DBus
+## UI Consistency
+
+### DBus Tray
 
 ```bash
 if [[ -n $DBUS_SESSION_BUS_ADDRESS ]]; then # remove prefix
@@ -191,7 +225,7 @@ sudo systemd-nspawn --directory=$container_name \
 --set-env=DBUS_SESSION_BUS_ADDRESS=unix:path=$container_bus
 ```
 
-## Sound through PulseAudio
+### PulseAudio
 
 ```bash
 if [[ -n $PULSE_SERVER ]]; then # remove prefix
@@ -205,17 +239,34 @@ systemd-nspawn --direcoty=$container_name \
 --setenv=PULSE_SERVER=unix:$container_pulse/native
 ```
 
-Note that: Apps that explicitly depend on ALSA could break PulseAudio. For Arch Linux container `pacman --sync pulseaudio-alsa --assume-installed pulseaudio` solves the problem.
+Note that: Apps that explicitly depend on ALSA could break PulseAudio.
+For Arch Linux container `pacman --sync pulseaudio-alsa --assume-installed pulseaudio` solves the problem.
 
-## UI Consistency
+### Styles
 
-If target app runs but looks different than how it does on host. Maybe mounting themes, icons and fonts to container would help:
+If app starts up but looks different than how it does on host. Mounting themes,
+icons and fonts to container would help:
 
-`--bind-ro=/usr/share/themes/:/home/username/.local/share/themes/` and the same for icons and fonts.
+```bash
+--bind-ro=/usr/share/themes/:/home/container_username/.local/share/themes/
+--bind-ro=/usr/share/icons/:/home/container_username/.local/share/icons/
+--bind-ro=/usr/share/fonts/:/home/container_username/.local/share/fonts/
+```
 
-This method is more balanced between container and host system, only thing to pay attention is that you'd better create `~/.local/share/` in container **before** mounting, or it will be read-only to target application.
+Note that the user directories like `~/.cache`, `~/.config` and `~/.local/share` in container need to be existing before mounting,
+otherwise applications would probably fail to write into them.
 
-If only the theme / icon / font files are not enough to application, consider mounting your corresponding configurations (read-only too). And also make sure user directories like `~/.config` already exist.
+For font configuration:
+
+```bash
+--bind-ro=/home/host_username/.config/fontconfig/:/home/container_username/.config/fontconfig/
+```
+
+For cursor icon search path:
+
+```bash
+--setenv=XCURSOR_PATH=/home/container_username/.local/share/icons
+```
 
 These two commands would be useful to manually refresh cache in container:
 
@@ -226,9 +277,12 @@ gtk-update-icon-cache --force
 
 ## Ready to Go
 
-After test, container should be ready for app. Write a shell script and wrap it into a desktop entry file, so it looks like a native app then.
+After test, container should be ready for app. Write a shell script and wrap it into a desktop entry file,
+so it looks like a native app then.
 
-Shell script `~/.local/bin/app.bash`:
+### Shell Script
+
+`~/.local/bin/app.bash`:
 
 ```bash
 #!/bin/bash
@@ -250,9 +304,18 @@ pkexec systemd-nspawn \
 --as-pid2 $app_binary
 ```
 
-Tool `pkexec` is used for root authorization under GUI, feel free to replace with `sudo` if doesn't require password.
+Tool `pkexec` is used for root authorization under GUI,
+feel free to replace with `sudo` if doesn't require password.
 
-Desktop entry `~/.local/share/applications/app.desktop`
+See also: my fish script to run steam: [~/.local/bin/steam][steam].
+
+[steam]: https://github.com/liolok/dotfiles/blob/master/.local/bin/steam
+
+### Desktop Entry
+
+Reference: [Desktop entries (.desktop)](https://www.freedesktop.org/wiki/Specifications/desktop-entry-spec/)
+
+`~/.local/share/applications/app.desktop`:
 
 ```properties
 [Desktop Entry]
@@ -263,6 +326,13 @@ Exec=app.bash
 Icon=icon-file-name
 ```
 
-For `Exec` key, script file name `app.bash` could be used only after adding its parent folder to your `PATH` environment variable, or input its full path. Former method also supports running from terminal.
+For `Exec` key, script file name `app.bash` could be used only after adding its parent folder to your `PATH` environment variable,
+otherwise input its full path `/home/host_username/.local/bin/app.bash`. Former method is also convenient for running from terminal.
 
-For `Icon` key, put icon file into `$XDG_DATA_DIRS/icons/hicolor/[size]/apps/`.
+For [`Icon`][desktop_icon] key, put custom icon file into `$XDG_DATA_DIRS/icons/hicolor/[size]/apps/`.
+
+[desktop_icon]: https://specifications.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html
+
+See also: my desktop entry to run steam: [~/.local/share/applications/steam.desktop][steam.desktop].
+
+[steam.desktop]: https://github.com/liolok/dotfiles/blob/master/.local/share/applications/steam.desktop
