@@ -22,7 +22,7 @@
 
 这是目前仅有的自由了，假装是个开发者，然后通过 `adb install` 安装任意应用。
 
-官方文档：[Device Setup | Oculus Developers][0]
+官方文档：[Device Setup - Oculus Developers][0]
 
 登录[这个页面][1]，创建一个假*组织*；然后打开手机上的 Oculus 应用，找到绑定的头戴设备，到*更多设置*里面开启*开发者模式*。
 
@@ -42,4 +42,4 @@ Reddit 的[这个讨论][2]把我引到了俄罗斯 Steam 地下论坛的[这个
 [1]: https://developer.oculus.com/manage/organizations/create/ "Oculus Developer Dashboard"
 [2]: https://www.reddit.com/r/QuestPiracy/comments/g2udwg/anyone_have_the_latest_beatsaber_apk/ "anyone have the latest beatsaber apk? : QuestPiracy"
 [3]: https://csrinru3c2ownkep.onion.ws/forum/viewtopic.php?p=2243456#p2243456
-[4]: https://developer.oculus.com/faqs/#faq_343265393702048 "Oculus Developer Center | FAQ"
+[4]: https://developer.oculus.com/faqs/#faq_343265393702048 "Oculus Developer Center - FAQ"
