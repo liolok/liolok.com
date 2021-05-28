@@ -25,7 +25,7 @@ get rid of.
 
 This is the only freedom for now, I can `adb install *.apk` as a fake developer.
 
-Official documentation: [Device Setup | Oculus Developers][0]
+Official documentation: [Device Setup - Oculus Developers][0]
 
 Log into this [page][1], create a fake *organization*. Then open Oculus app on the phone, find the
 headset device, turn on *Developer Mode* in *More Settings*.
@@ -46,6 +46,6 @@ get the `Beat Saber [1.12.2.131] patch+savefix+90Hz+CustomRes.apk` to `adb insta
 [1]: https://developer.oculus.com/manage/organizations/create/ "Oculus Developer Dashboard"
 [2]: https://www.reddit.com/r/QuestPiracy/comments/g2udwg/anyone_have_the_latest_beatsaber_apk/ "anyone have the latest beatsaber apk? : QuestPiracy"
 [3]: https://csrinru3c2ownkep.onion.ws/forum/viewtopic.php?p=2243456#p2243456
-[4]: https://developer.oculus.com/faqs/#faq_343265393702048 "Oculus Developer Center | FAQ"
+[4]: https://developer.oculus.com/faqs/#faq_343265393702048 "Oculus Developer Center - FAQ"
 
-[code]: https://developer.oculus.com/documentation/native/android/mobile-adb/ "ADB | Oculus Developers"
+[code]: https://developer.oculus.com/documentation/native/android/mobile-adb/ "ADB - Oculus Developers"
