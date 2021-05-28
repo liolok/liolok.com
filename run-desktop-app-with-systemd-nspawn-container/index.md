@@ -5,8 +5,10 @@
 - Published at April 5 of 2020
 - Updated at May 28 of 2021
 - [Source code][source]
+- [Web page][page]
 
 [source]: https://github.com/liolok/liolok.github.io/blob/master/run-desktop-app-with-systemd-nspawn-container/index.md
+[page]: https://liolok.github.io/run-desktop-app-with-systemd-nspawn-container/
 
 ## Pros
 
