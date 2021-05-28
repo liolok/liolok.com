@@ -49,7 +49,7 @@ print(return_content)
 
 应该得到一个极其长、看似随机的字符串，像下面这样：
 
-![Base64 示例](./base64-example.png)
+![Base64 示例](../../v2ray-subscription-parse/base64-example.png)
 
 ### 获取分享链接列表
 
