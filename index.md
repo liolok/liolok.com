@@ -13,6 +13,4 @@
 
 ---
 
-Repo: [liolok/liolok.github.io: liolok's blog](https://github.com/liolok/liolok.github.io)
-
-Source Code: [liolok/liolok.github.io/index.md](https://raw.githubusercontent.com/liolok/liolok.github.io/master/index.md)
+Source code: [liolok/liolok.github.io: liolok's blog](https://github.com/liolok/liolok.github.io)
