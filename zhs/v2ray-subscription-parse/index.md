@@ -6,9 +6,9 @@
 - [源码][source]
 - [网页][page]以及[英文版][page_en]
 
-[source]: https://github.com/liolok/liolok.github.io/blob/master/zhs/v2ray-subscription-parse/index.md
-[page_en]: https://liolok.github.io/v2ray-subscription-parse/
-[page]: https://liolok.github.io/zhs/v2ray-subscription-parse/
+[source]: https://github.com/liolok/liolok.com/blob/master/zhs/v2ray-subscription-parse/index.md
+[page_en]: https://liolok.com/v2ray-subscription-parse/
+[page]: https://liolok.com/zhs/v2ray-subscription-parse/
 
 
 ## 前言

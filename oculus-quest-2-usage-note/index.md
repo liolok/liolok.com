@@ -6,9 +6,9 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.github.io/blob/master/oculus-quest-2-usage-note/index.md
-[page]: https://liolok.github.io/oculus-quest-2-usage-note/
-[page_zhs]: https://liolok.github.io/zhs/oculus-quest-2-usage-note/
+[source]: https://github.com/liolok/liolok.com/blob/master/oculus-quest-2-usage-note/index.md
+[page]: https://liolok.com/oculus-quest-2-usage-note/
+[page_zhs]: https://liolok.com/zhs/oculus-quest-2-usage-note/
 
 ## Facebook Account
 

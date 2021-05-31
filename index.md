@@ -13,4 +13,4 @@
 
 ---
 
-Source code: [liolok/liolok.github.io: liolok's blog](https://github.com/liolok/liolok.github.io)
+Source code: [liolok/liolok.com](https://github.com/liolok/liolok.com)

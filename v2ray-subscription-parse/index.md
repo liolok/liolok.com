@@ -6,9 +6,9 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.github.io/blob/master/v2ray-subscription-parse/index.md
-[page]: https://liolok.github.io/v2ray-subscription-parse/
-[page_zhs]: https://liolok.github.io/zhs/v2ray-subscription-parse/
+[source]: https://github.com/liolok/liolok.com/blob/master/v2ray-subscription-parse/index.md
+[page]: https://liolok.com/v2ray-subscription-parse/
+[page_zhs]: https://liolok.com/zhs/v2ray-subscription-parse/
 
 ## Preface
 

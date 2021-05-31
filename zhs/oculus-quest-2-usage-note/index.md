@@ -6,9 +6,9 @@
 - [源码][source]
 - [网页][page]以及[英文版][page_en]
 
-[source]: https://github.com/liolok/liolok.github.io/blob/master/zhs/oculus-quest-2-usage-note/index.md
-[page_en]: https://liolok.github.io/oculus-quest-2-usage-note/
-[page]: https://liolok.github.io/zhs/oculus-quest-2-usage-note/
+[source]: https://github.com/liolok/liolok.com/blob/master/zhs/oculus-quest-2-usage-note/index.md
+[page_en]: https://liolok.com/oculus-quest-2-usage-note/
+[page]: https://liolok.com/zhs/oculus-quest-2-usage-note/
 
 ## Facebook 账户
 

@@ -13,4 +13,4 @@
 
 ---
 
-源码：[liolok/liolok.github.io: liolok's blog](https://github.com/liolok/liolok.github.io)
+源码：[liolok/liolok.com](https://github.com/liolok/liolok.com)

@@ -9,8 +9,8 @@
 - [源码][source]
 - [网页][page]
 
-[source]: https://github.com/liolok/liolok.github.io/blob/master/zhs/kernel-compilation-with-custom-syscall/index.md
-[page]: https://liolok.github.io/zhs/kernel-compilation-with-custom-syscall/
+[source]: https://github.com/liolok/liolok.com/blob/master/zhs/kernel-compilation-with-custom-syscall/index.md
+[page]: https://liolok.com/zhs/kernel-compilation-with-custom-syscall/
 
 ## 写在最前
 

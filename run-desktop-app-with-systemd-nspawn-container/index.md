@@ -7,8 +7,8 @@
 - [Source code][source]
 - [Web page][page]
 
-[source]: https://github.com/liolok/liolok.github.io/blob/master/run-desktop-app-with-systemd-nspawn-container/index.md
-[page]: https://liolok.github.io/run-desktop-app-with-systemd-nspawn-container/
+[source]: https://github.com/liolok/liolok.com/blob/master/run-desktop-app-with-systemd-nspawn-container/index.md
+[page]: https://liolok.com/run-desktop-app-with-systemd-nspawn-container/
 
 ## Pros
 
