@@ -1,8 +1,14 @@
-# Run a Mastodon Server on Arch Linux VPS
+# Run Mastodon Server on Arch Linux VPS
 
 ## Meta Info
 
 - Published at Dec 08 of 2019
+- [Source code][source]
+- [Web page][page] and [zh-Hans version][page_zhs]
+
+[source]: https://github.com/liolok/liolok.com/blob/master/run-mastodon-server-on-arch-Linux-vps/index.md
+[page]: https://liolok.com/run-mastodon-server-on-arch-Linux-vps
+[page_zhs]: https://liolok.com/zhs/run-mastodon-server-on-arch-Linux-vps
 
 I'm using Docker to run Mastodon now, this article is reserved only for reference.
 
