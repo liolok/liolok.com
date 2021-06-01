@@ -6,9 +6,9 @@
 - [源码][source]
 - [网页][page]以及[英文版][page_en]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/run-a-mastodon-server-on-arch-Linux-vps/index.md
-[page_en]: https://liolok.com/run-a-mastodon-server-on-arch-Linux-vps
-[page]: https://liolok.com/zhs/run-a-mastodon-server-on-arch-Linux-vps
+[source]: https://github.com/liolok/liolok.com/blob/master/zhs/run-a-mastodon-server-on-archlinux-vps/index.md
+[page_en]: https://liolok.com/run-a-mastodon-server-on-archlinux-vps
+[page]: https://liolok.com/zhs/run-a-mastodon-server-on-archlinux-vps
 
 我现在使用 Docker 运行 Mastodon 了，本文仅留作参考。
 

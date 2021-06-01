@@ -6,9 +6,9 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/run-mastodon-server-on-arch-Linux-vps/index.md
-[page]: https://liolok.com/run-mastodon-server-on-arch-Linux-vps
-[page_zhs]: https://liolok.com/zhs/run-mastodon-server-on-arch-Linux-vps
+[source]: https://github.com/liolok/liolok.com/blob/master/run-mastodon-server-on-archlinux-vps/index.md
+[page]: https://liolok.com/run-mastodon-server-on-archlinux-vps
+[page_zhs]: https://liolok.com/zhs/run-mastodon-server-on-archlinux-vps
 
 I'm using Docker to run Mastodon now, this article is reserved only for reference.
 

@@ -11,8 +11,8 @@
 - [Oculus Quest 2 Usage Note](oculus-quest-2-usage-note)
 
 Archived:
-- [Install Arch Linux on Acer Swift 3 SF313-52](install-arch-linux-on-acer-swift-3-sf313-52)
-- [Run Mastodon Server on Arch Linux VPS](run-mastodon-server-on-arch-Linux-vps)
+- [Install Arch Linux on Acer Swift 3 SF313-52](install-archlinux-on-acer-swift-3-sf313-52)
+- [Run Mastodon Server on Arch Linux VPS](run-mastodon-server-on-archlinux-vps)
 - [V2Ray Subscription Parse](v2ray-subscription-parse)
 - [How to Add Image to Hexo Blog Post](how-to-add-image-to-hexo-blog-post)
 - [Manage Dotfiles with Git and Stow](manage-dotfiles-with-git-and-stow)
