@@ -3,6 +3,11 @@
 ## Meta Info
 
 - Published at Feb 28 of 2020
+- [Source code][source]
+- [Web page][page]
+
+[source]: https://github.com/liolok/liolok.com/blob/master/install-arch-linux-on-acer-swift-3-sf313-52/index.md
+[page]: /install-arch-linux-on-acer-swift-3-sf313-52
 
 ## Pre-installation
 
