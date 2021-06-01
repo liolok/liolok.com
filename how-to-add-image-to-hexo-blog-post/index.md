@@ -43,15 +43,15 @@ If you need to save the traffic of your blog site, an image hosting service may 
 
 ## Post Asset Folder
 
-First of all, this feature need to be enabled in Hexo site configuration file:
+First of all, this feature need to be enabled in Hexo site configuration file `_config.yml`:
 
-```yml _config.yml
+```yml
 post_asset_folder: true
 ```
 
 Then the files in `source/_posts` should look like this:
 
-```plain source/_posts/
+```
 2019-02-14-Test-Post.md
 2019-02-14-Test-Post/
 +-- Test-Image-1.png
@@ -71,9 +71,9 @@ First you need to install plugin [`hexo-asset-link`](https://www.npmjs.com/packa
 $ npm i --save hexo-asset-link
 ```
 
-Then in markdown source file, the base-relative links scheme would look like this:
+Then in markdown source file `source/_posts/2019-02-14-Test-Post.md`, the base-relative links scheme would look like this:
 
-```md source/_posts/2019-02-14-Test-Post.md
+```md
 ![](2019-02-14-Test-Post/Test-Image-1.png)
 ![](./2019-02-14-Test-Post/Test-Image-2.png)
 ![](2019-02-14-Test-Post/Subdirectory/Test-Image-3.png)
@@ -82,7 +82,7 @@ Then in markdown source file, the base-relative links scheme would look like thi
 
 ### Relative Link Based on Post Asset Folder
 
-```md source/_posts/2019-02-14-Test-Post.md
+```md
 ![](Test-Image-1.png)
 ![](./Test-Image-2.png)
 ![](Subdirectory/Test-Image-3.png)
