@@ -18,3 +18,5 @@
 ---
 
 源码：[liolok/liolok.com](https://github.com/liolok/liolok.com)
+
+许可：[CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/deed.zh "署名-非商业性使用 4.0 国际")
