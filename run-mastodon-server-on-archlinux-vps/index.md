@@ -18,7 +18,7 @@ Short story: open-source self-hosted Twitter. So why not Twitter? Well Mastodon 
 
 ## VPS Requirement
 
-I'm using one-year free trial of AWS, there are [Arch Linux AMIs][archlinux_ami] according to [ArchWiki][arch_wiki], which peopel can directly launch EC2 instances.
+I'm using one-year free trial of AWS, there are [Arch Linux AMIs][archlinux_ami] according to [ArchWiki][arch_wiki], which people can directly launch EC2 instances.
 
 Basically a VPS that one can install Arch Linux on it is enough; Hardware resource requirement depends on user amount, in my case, a free trial VPS should be enough.
 
@@ -36,7 +36,7 @@ Go to my DNS service website then add an A record with public IP of VPS to my do
 My VPS has only 1G memory, so a swapfile is considered necessery.
 
 ```console
-# pacman -S systemd-swap
+# pacman --sync systemd-swap
 # sed --in-place 's/swapfc_enabled=0/swapfc_enabled=1/' /etc/systemd/swap.conf
 # systemctl enable systemd-swap
 # reboot
@@ -45,7 +45,7 @@ My VPS has only 1G memory, so a swapfile is considered necessery.
 ## Install Packages Needed
 
 ```console
-# pacman -S nano sudo tmux yay nginx certbot-nginx
+# pacman --sync nano sudo tmux yay nginx certbot-nginx
 ```
 
 I don't know how to use `vi` so `nano` is needed.
@@ -63,7 +63,7 @@ An AUR package is not allowed to install with root user, so I have to run `usera
 ```console
 # su - liolok
 $ tmux
-$ yay -S mastodon
+$ yay --sync mastodon
 ```
 
 Nodejs stuff will take quite a long time even without output. After installation, press `Ctrl` + `D` twice to return to root user.
@@ -94,14 +94,14 @@ Dec 08 16:37:37 ip-172-31-21-37 systemd[1]: <font color="#EF2929"><b>Failed to s
 It seems not a big deal, just follow the instruction to initialize the database cluster and then start service.
 
 ```console
-# su - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
+# su - postgres --command "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
 # systemctl start postgres
 ```
 
 Then create the Mastodon PostgreSQL user and grant it the ability to create databases:
 
 ```console
-# su - postgres -s /bin/sh -c "createuser -d mastodon"
+# su - postgres --shell /bin/sh --command "createuser -d mastodon"
 ```
 
 ## Nginx
@@ -111,22 +111,22 @@ Copy Mastodon's default nginx configuration:
 ```console
 # cd /etc/nginx/
 # mkdir sites-available sites-enabled
-# cp -v /var/lib/mastodon/dist/nginx.conf sites-available/mastodon
-# ln -sv sites-available/mastodon sites-enabled/mastodon
+# cp --verbose /var/lib/mastodon/dist/nginx.conf sites-available/mastodon
+# ln --symbolic --verbose sites-available/mastodon sites-enabled/mastodon
 ```
 
 Replace `example.com` with my own domain, fix mastodon path:
 
 ```console
 # sed --in-place=".default" /etc/nginx/sites-available/mastodon \
--e 's/example\.com/zone\.liolok\.com/' \
--e 's/home\/mastodon\/live/var\/lib\/mastodon/'
+--expression 's/example\.com/zone\.liolok\.com/' \
+--expression 's/home\/mastodon\/live/var\/lib\/mastodon/'
 ```
 
 Generate certificate:
 
 ```console
-# certbot --nginx -d zone.liolok.com
+# certbot --nginx --domains zone.liolok.com
 ```
 
 This command reports that certificate and chain are saved, but haven't been installed to nginx configuration.
@@ -141,12 +141,12 @@ Then run `systemctl enable --now nginx`.
 
 ```console
 # tmux
-# su - mastodon -s /bin/sh -c "cd '/var/lib/mastodon'; RAILS_ENV=production bundle exec rails mastodon:setup"
+# su - mastodon --shell /bin/sh --command "cd '/var/lib/mastodon'; RAILS_ENV=production bundle exec rails mastodon:setup"
 ```
 
 In this step, there will be a command line interface that seems kind of user friendly.
 
-First content to input is my own domain `zone.liolok.com`; then comes stuff about postgrsql and redis, leave them default; then comes E-mail part: this confused me for a lot of time, at last I used my previous configured Yandex domain mail:
+First content to input is my own domain `zone.liolok.com`; then comes stuff about postgresql and redis, leave them default; then comes E-mail part: this confused me for a lot of time, at last I used my previous configured Yandex domain mail:
 
 - host: `smtp.yandex.com`
 - port: `587` (not the common search result 465)
