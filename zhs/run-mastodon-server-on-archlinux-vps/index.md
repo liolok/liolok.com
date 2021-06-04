@@ -40,7 +40,7 @@
 VPS 只有 1G 内存，创建一个交换文件还是很有必要的。
 
 ```console
-# pacman -S systemd-swap
+# pacman --sync systemd-swap
 # sed --in-place 's/swapfc_enabled=0/swapfc_enabled=1/' /etc/systemd/swap.conf
 # systemctl enable systemd-swap
 # reboot
@@ -49,7 +49,7 @@ VPS 只有 1G 内存，创建一个交换文件还是很有必要的。
 ## 安装所需软件包
 
 ```console
-# pacman -S nano sudo tmux yay nginx certbot-nginx
+# pacman --sync nano sudo tmux yay nginx certbot-nginx
 ```
 
 不会用 `vi`，装 `nano`。
@@ -67,7 +67,7 @@ VPS 只有 1G 内存，创建一个交换文件还是很有必要的。
 ```console
 # su - liolok
 $ tmux
-$ yay -S mastodon
+$ yay --sync mastodon
 ```
 
 会在 Nodejs 相关的步骤花费很长时间而且甚至没有输出。安装完成后按两次 `Ctrl` + `D` 返回 root 用户。
@@ -98,14 +98,14 @@ Dec 08 16:37:37 ip-172-31-21-37 systemd[1]: <font color="#EF2929"><b>Failed to s
 看起来问题不大，跑一下命令初始化一下数据库什么的再启动服务。
 
 ```console
-# su - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
+# su - postgres --command "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
 # systemctl start postgres
 ```
 
 然后创建 PostgreSQL 的 Mastodon 用户，并授权创建数据库：
 
 ```console
-# su - postgres -s /bin/sh -c "createuser -d mastodon"
+# su - postgres --shell /bin/sh --command "createuser -d mastodon"
 ```
 
 ## Nginx
@@ -115,22 +115,22 @@ Dec 08 16:37:37 ip-172-31-21-37 systemd[1]: <font color="#EF2929"><b>Failed to s
 ```console
 # cd /etc/nginx/
 # mkdir sites-available sites-enabled
-# cp -v /var/lib/mastodon/dist/nginx.conf sites-available/mastodon
-# ln -sv sites-available/mastodon sites-enabled/mastodon
+# cp --verbose /var/lib/mastodon/dist/nginx.conf sites-available/mastodon
+# ln --symbolic --verbose sites-available/mastodon sites-enabled/mastodon
 ```
 
 把域名替换成自己的，再修复一下 Mastodon 的实际路径：
 
 ```console
 # sed --in-place=".default" /etc/nginx/sites-available/mastodon \
--e 's/example\.com/zone\.liolok\.com/' \
--e 's/home\/mastodon\/live/var\/lib\/mastodon/'
+--expression 's/example\.com/zone\.liolok\.com/' \
+--expression 's/home\/mastodon\/live/var\/lib\/mastodon/'
 ```
 
 生成证书：
 
 ```console
-# certbot --nginx -d zone.liolok.com
+# certbot --nginx --domains zone.liolok.com
 ```
 
 这条命令会报告说证书已保存但未安装到 nginx 配置中。
@@ -146,7 +146,7 @@ Dec 08 16:37:37 ip-172-31-21-37 systemd[1]: <font color="#EF2929"><b>Failed to s
 
 ```console
 # tmux
-# su - mastodon -s /bin/sh -c "cd '/var/lib/mastodon'; RAILS_ENV=production bundle exec rails mastodon:setup"
+# su - mastodon --shell /bin/sh --command "cd '/var/lib/mastodon'; RAILS_ENV=production bundle exec rails mastodon:setup"
 ```
 
 在这一步，会有个还算友好的命令行交互界面。
