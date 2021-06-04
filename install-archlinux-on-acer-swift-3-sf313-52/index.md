@@ -74,7 +74,7 @@ Set [time zone][time-zone], [localization][localization] and [network configurat
 
 Creating a new initramfs by `mkinitcpio -P` and set root password with `passwd`.
 
-Install microcode with `pacman -S intel-ucode` and install [systemd-boot][sd-boot] into ESP: `bootctl --path=/boot install`.
+Install microcode with `pacman --sync intel-ucode` and install [systemd-boot][sd-boot] into ESP: `bootctl --path=/boot install`.
 
 > After installing a AUR helper or adding archlinuxcn repo, remember to install `systemd-boot-pacman-hook` to update systemd-boot in ESP automatically.
 
@@ -108,11 +108,11 @@ A minial installation is basically completed now, `Ctrl + D` or `exit` to quit `
 ```console
 # wifi-menu # connect to network (or just plug in cable)
 # ping archlinux.org -c 4 # verify network
-# pacman -S sudo # prepare for admin user
+# pacman --sync sudo # prepare for admin user
 # nano /etc/sudoers # uncomment "%wheel ALL=(ALL) ALL" line
-# useradd -m -G wheel liolok # create admin user
+# useradd liolok --create-home --groups wheel # create admin user
 # passwd liolok # set admin password
-# pacman -S gnome # install Gnome as desktop environment
+# pacman --sync gnome # install Gnome as desktop environment
 # systemctl enable gdm # enable Gnome's display manager
 # reboot # reboot into GUI
 ```
