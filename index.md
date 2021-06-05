@@ -16,6 +16,7 @@ Archived:
 - [V2Ray Subscription Parse](v2ray-subscription-parse)
 - [How to Add Image to Hexo Blog Post](how-to-add-image-to-hexo-blog-post)
 - [Manage Dotfiles with Git and Stow](manage-dotfiles-with-git-and-stow)
+- [Build Blog with Hexo and GitHub Pages](build-blog-with-hexo-and-github-pages)
 
 ---
 
