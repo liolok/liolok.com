@@ -14,6 +14,8 @@
 - [在 Arch Linux VPS 上运行 Mastodon 服务端](run-mastodon-server-on-archlinux-vps)
 - [V2Ray 订阅解析](v2ray-subscription-parse)
 - [如何为 Hexo 博文加入图片](how-to-add-image-to-hexo-blog-post)
+- [使用 Travis CI 部署 Hexo 博客](deploy-hexo-blog-with-travis-ci)
+- [使用 Hexo 和 GitHub Pages 搭建博客](build-blog-with-hexo-and-github-pages)
 
 ---
 
