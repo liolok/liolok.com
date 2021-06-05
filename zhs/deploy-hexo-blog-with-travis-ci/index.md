@@ -180,11 +180,11 @@ after_script:
 
 ### 子模块相关
 
-- [Hexo 博客源码管理 - 使用Git子模块 | 辛未羊的博客](https://panqiincs.me/2017/08/06/hexo-blog-code-management/#使用git子模块)
-- [坑3：Travis CI 自动构建部署之后，博客页面空白，什么也没有 | CodingLife](https://magicse7en.github.io/2016/03/27/travis-ci-auto-deploy-hexo-github/#坑3：-travis-CI自动构建部署之后，博客页面空白，什么也没有)
-- ~~[手动配置 Git 的 Submodule | Strago's Corner](https://blog.strago.xin/2016/GitSubmodule/)~~
+- [Hexo 博客源码管理 - 使用Git子模块 - 辛未羊的博客](https://panqiincs.me/2017/08/06/hexo-blog-code-management/#使用git子模块)
+- [坑3：Travis CI 自动构建部署之后，博客页面空白，什么也没有 - CodingLife](https://magicse7en.github.io/2016/03/27/travis-ci-auto-deploy-hexo-github/#坑3：-travis-CI自动构建部署之后，博客页面空白，什么也没有)
+- ~~[手动配置 Git 的 Submodule - Strago's Corner](https://blog.strago.xin/2016/GitSubmodule/)~~
 
 ### Travis CI 相关
 
-- [使用 Travis CI 持续构建 Hexo | neoFelhz's Blog](https://web.archive.org/web/20180904004710/https://blog.nfz.moe/archives/hexo-auto-deploy-with-travis-ci.html)：参考了 Travis 线上配置选项以及开启 source 分支保护
-- [使用 Travis CI 自动部署 Hexo 博客 | IT 范儿](https://www.itfanr.cc/2017/08/09/using-travis-ci-automatic-deploy-hexo-blogs/#创建-travis-yml-文件)：参考了其中最简单版本的 `.travis.yml` 配置文件（不考虑对站点文件的版本控制）
+- [使用 Travis CI 持续构建 Hexo - neoFelhz's Blog](https://web.archive.org/web/20180904004710/https://blog.nfz.moe/archives/hexo-auto-deploy-with-travis-ci.html)：参考了 Travis 线上配置选项以及开启 source 分支保护
+- [使用 Travis CI 自动部署 Hexo 博客 - IT 范儿](https://www.itfanr.cc/2017/08/09/using-travis-ci-automatic-deploy-hexo-blogs/#创建-travis-yml-文件)：参考了其中最简单版本的 `.travis.yml` 配置文件（不考虑对站点文件的版本控制）
