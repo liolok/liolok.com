@@ -21,8 +21,14 @@ lang: zh-Hans
 - [使用 Travis CI 部署 Hexo 博客](deploy-hexo-blog-with-travis-ci)
 - [使用 Hexo 和 GitHub Pages 搭建博客](build-blog-with-hexo-and-github-pages)
 
----
+## 仓库
 
-源码：[liolok/liolok.com](https://github.com/liolok/liolok.com)
+- [liolok.com](https://github.com/liolok/liolok.com)：本站 Markdown 源码
+- [dotfiles](https://github.com/liolok/dotfiles)：我的 Arch Linux 家目录
 
-许可：[CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/deed.zh "署名-非商业性使用 4.0 国际")
+已归档：
+- [hexo-asset-link](https://github.com/liolok/hexo-asset-link)：Hexo 相对链接转换插件
+- [HDU_CO_Guide](https://github.com/liolok/HDU_CO_Guide)：杭电计组课设新手指南
+- [ExoPlayer-Sample](https://github.com/liolok/ExoPlayer-Sample)、[Lu-Xun](https://github.com/liolok/Lu-Xun)：Android 应用示例
+- [Inventory-Management](https://github.com/liolok/Inventory-Management)：Qt/SQLite 桌面应用示例
+- [YoukuNews](https://github.com/liolok/YoukuNews)：Scrapy 爬虫示例
