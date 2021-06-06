@@ -121,7 +121,7 @@ Point deCasteljauEval(const Bezier& R, double t)
 
 ### 剖分示例
 
-![剖分示例](example.gif)
+![剖分示例](example.webp)
 
 ## 参考资料
 
