@@ -11,11 +11,12 @@
 <div class="container-lg px-3 my-5 markdown-body">
 <h1><a href="/">{{ site.title }}</a></h1>
 {{ content }}
-{% if site.github.private != true and site.github.license %}
 <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-This site is open source. {% github_edit_link "Improve this page" %}.
+© 2018 {% if page.lang == "zh-Hans" %}李皓奇{% else %}liolok{% endif %}
+<a href="https://creativecommons.org/licenses/by-nc/4.0/{% if page.lang == "zh-Hans" %}deed.zh{% endif %}"
+title="{% if page.lang == "zh-Hans" %}署名-非商业性使用 4.0 国际{% else %}Attribution-NonCommercial 4.0 International{% endif %}"
+target="_blank">CC BY-NC 4.0</a>
 </div>
-{% endif %}
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 <script>anchors.add();</script>
