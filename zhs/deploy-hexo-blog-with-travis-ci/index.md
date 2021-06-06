@@ -1,3 +1,6 @@
+lang: zh-Hans
+---
+
 # 使用 Travis CI 部署 Hexo 博客
 
 ## 关于本文

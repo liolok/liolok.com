@@ -1,3 +1,6 @@
+lang: zh-Hans
+---
+
 # 在 Arch Linux VPS 上运行 Mastodon 服务端
 
 ## 关于本文

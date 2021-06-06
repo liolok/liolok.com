@@ -1,3 +1,6 @@
+lang: zh-Hans
+---
+
 # Oculus Quest 2 使用笔记
 
 ## 关于本文

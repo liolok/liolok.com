@@ -1,3 +1,6 @@
+lang: zh-Hans
+---
+
 # 使用 Hexo 和 GitHub Pages 搭建博客
 
 ## 关于本文
