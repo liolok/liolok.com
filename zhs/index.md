@@ -20,6 +20,8 @@ lang: zh-Hans
 - [如何为 Hexo 博文加入图片](how-to-add-image-to-hexo-blog-post)
 - [使用 Travis CI 部署 Hexo 博客](deploy-hexo-blog-with-travis-ci)
 - [使用 Hexo 和 GitHub Pages 搭建博客](build-blog-with-hexo-and-github-pages)
+- [Bézier 曲线与 De Casteljau 算法](bezier-curve-and-de-casteljau-algorithm)
+- [Bresenham 直线算法及其决策参数](bresenham-line-algorithm-and-decision-parameter)
 
 ## 仓库
 
