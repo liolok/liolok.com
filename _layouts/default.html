@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% assign segments = page.url | remove_first: "/" | split: "/" %}
-<html lang="{{ {% if segments.first == "zhs" %}zh-Hans{% endif %} | default: en-US }}">
+<html lang="{{ {% if {{ segments | first }} == "zhs" %}zh-Hans{% endif %} | default: en-US }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
