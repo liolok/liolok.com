@@ -18,8 +18,14 @@ Archived:
 - [Manage Dotfiles with Git and Stow](manage-dotfiles-with-git-and-stow)
 - [Build Blog with Hexo and GitHub Pages](build-blog-with-hexo-and-github-pages)
 
----
+## Repositories
 
-Source code: [liolok/liolok.com](https://github.com/liolok/liolok.com)
+- [liolok.com](https://github.com/liolok/liolok.com): Markdown source of this site
+- [dotfiles](https://github.com/liolok/dotfiles): My Arch Linux $HOME
 
-License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/ "Attribution-NonCommercial 4.0 International")
+Archived:
+- [hexo-asset-link](https://github.com/liolok/hexo-asset-link): Hexo plugin to convert relative links
+- [HDU_CO_Guide](https://github.com/liolok/HDU_CO_Guide): HDU computer organization course design beginner guide
+- [ExoPlayer-Sample](https://github.com/liolok/ExoPlayer-Sample), [Lu-Xun](https://github.com/liolok/Lu-Xun): Android app examples
+- [Inventory-Management](https://github.com/liolok/Inventory-Management): Qt/SQLite desktop app example
+- [YoukuNews](https://github.com/liolok/YoukuNews): Scrapy crawler example
