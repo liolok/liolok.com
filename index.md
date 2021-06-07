@@ -30,4 +30,5 @@ Archived:
 - [HDU_CO_Guide](https://github.com/liolok/HDU_CO_Guide): HDU computer organization course design beginner guide
 - [ExoPlayer-Sample](https://github.com/liolok/ExoPlayer-Sample), [Lu-Xun](https://github.com/liolok/Lu-Xun): Android app examples
 - [Inventory-Management](https://github.com/liolok/Inventory-Management): Qt/SQLite desktop app example
+- [Repeat Buyers Prediction](https://gitlab.com/liolok/Repeat-Buyers-Prediction): Pandas data processing example
 - [YoukuNews](https://github.com/liolok/YoukuNews): Scrapy crawler example

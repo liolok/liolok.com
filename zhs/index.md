@@ -35,4 +35,5 @@ lang: zh-Hans
 - [HDU_CO_Guide](https://github.com/liolok/HDU_CO_Guide)：杭电计组课设新手指南
 - [ExoPlayer-Sample](https://github.com/liolok/ExoPlayer-Sample)、[Lu-Xun](https://github.com/liolok/Lu-Xun)：Android 应用示例
 - [Inventory-Management](https://github.com/liolok/Inventory-Management)：Qt/SQLite 桌面应用示例
+- [Repeat Buyers Prediction](https://gitlab.com/liolok/Repeat-Buyers-Prediction)：Pandas 数据处理示例
 - [YoukuNews](https://github.com/liolok/YoukuNews)：Scrapy 爬虫示例
