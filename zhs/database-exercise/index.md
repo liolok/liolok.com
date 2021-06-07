@@ -494,8 +494,6 @@ AS
 - `SC` 是学生选课关系，`Sno`：学号，`Cno`：课程号，`Grade`：成绩；
 - `C` 是课程关系，`Cno`：课程号，`Cname`：课程名，`Period`：学时，`Teacher`：任课教师。
 
-<!-- more -->
-
 ```SQL
 -- 查询选修了课程名为 DB 的学生姓名和所在班级
 -- ΠSname,Class(S∞SC∞σCname='DB'(C))
