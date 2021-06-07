@@ -99,6 +99,13 @@ db.json
     url = https://github.com/liolok/hexo-theme-next
 ```
 
+此处的 URL 协议使用 HTTPS 对于 CI 来说是方便的；但是对于本地使用场景来讲，推送到主题的远程仓库会需要 GitHub 用户名密码登录验证，更新主题时会比较麻烦。
+
+另一个方案是默认使用 SSH 协议，在 CI 部署前使用脚本自动改为 HTTPS，这样可以兼顾两种场景。详见此处的[讨论][discussion]以及 akkuman 的 [`.travis.yml#L22-L23`][script]。
+
+[discussion]: https://github.com/liolok/blog-hexo/issues/4#issuecomment-419354125
+[script]: https://github.com/akkuman/akkuman.github.io/blob/0d4e74927842d42838fbff752ffd681be952c638/.travis.yml#L22-L23
+
 #### 设置上游项目
 
 ```bash
@@ -175,8 +182,8 @@ after_script:
 # 结束构建
 ```
 
-- 从上面的配置文件中可以看到，Travis CI 的构建流程中并没有使用 `hexo depoly`/`hexo d` 这一命令，而是在生成静态文件后直接将整个静态文件夹全新推送到 master 分支，这也体现了前文提到的「无需对站点静态文件进行版本控制」。
-- 由于不再需要 `hexo depoly` 命令，我们完全可以把博客实例中的 hexo-deployer-git 插件及其相关的部署配置全部精简掉。这样也能确保本地的博客实例不会误操作命令。
+- 从上面的配置文件中可以看到，Travis CI 的构建流程中并没有使用 `hexo deploy`/`hexo d` 这一命令，而是在生成静态文件后直接将整个静态文件夹全新推送到 master 分支，这也体现了前文提到的「无需对站点静态文件进行版本控制」。
+- 由于不再需要 `hexo deploy` 命令，我们完全可以把博客实例中的 hexo-deployer-git 插件及其相关的部署配置全部精简掉。这样也能确保本地的博客实例不会误操作命令。
 
 ## 参考资料
 
