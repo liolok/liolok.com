@@ -9,7 +9,7 @@
 [source]: https://github.com/liolok/liolok.com/blob/master/manage-dotfiles-with-git-and-stow/index.md
 [page]: https://liolok.com/manage-dotfiles-with-git-and-stow
 
-I use only git an tons of `.gitignore` files to manage my dotfiles now, this article is reserved only for reference.
+I use only git and tons of `.gitignore` files to manage my dotfiles now, this article is reserved only for reference.
 
 ## What is Dotfiles
 
@@ -18,8 +18,6 @@ This name came from the dot prefix of file name, for example, your probably most
 So when we say dotfiles, we're talking about user level application configuration, which should be stored as text files in `~/.config`, according to [XDG Base Directory Specification][xdg]).
 
 However dotfiles may be at anywhere under your home directory: `~/.bashrc`, `~/.zshrc`, `~/.ssh/config`. Apparently, not all apps follow the XDG standard.
-
-<!-- more -->
 
 ## Manage for What
 
