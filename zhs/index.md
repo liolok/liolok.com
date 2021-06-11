@@ -4,11 +4,6 @@ lang: zh-Hans
 
 # 李皓奇
 
-## 语言
-
-- [en-US](/)
-- zh-Hans
-
 ## 文章
 
 - [Oculus Quest 2 使用笔记](oculus-quest-2-usage-note/)
