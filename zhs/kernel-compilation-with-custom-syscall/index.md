@@ -331,7 +331,7 @@ x86 架构的系统调用表位于 `./arch/x86/entry/syscalls/syscall_{64,32}.tb
 
 ![入口点](entry-point.png)
 
-```C
+```c
 /*
  * Set/get nice value and get priority value of a process with given ID;
  * Set new nice value only if parameter set is true;
@@ -397,7 +397,7 @@ SYSCALL_DEFINE5(setnice, pid_t, pid, bool, set, int, niceval,
 
 [set_user_nice]: https://elixir.bootlin.com/linux/v5.4.74/source/kernel/sched/core.c#L4585
 
-```C
+```c
 void set_user_nice(struct task_struct *p, long nice)
 {
 	bool queued, running; // 进程是否在运行队列中、进程是否正在运行
@@ -473,7 +473,7 @@ out_unlock:
 
 编写一个用户态程序以测试新添加的系统调用，如笔者的 `test_setnice.c` 代码如下：
 
-```C
+```c
 #include <sys/syscall.h> // syscall()
 #include <unistd.h> // pid_t, getpid()
 #include <stdio.h> // scanf(), printf()
