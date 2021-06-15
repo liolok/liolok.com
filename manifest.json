@@ -23,6 +23,7 @@
             "type": "image/png"
         }
     ],
+    "lang": "en",
     "name": "liolok.com",
     "short_name": "liolok",
     "start_url": "/"
