@@ -1,0 +1,29 @@
+{
+    "background_color": "white",
+    "display": "standalone",
+    "icons": [
+        {
+            "sizes": "48x48",
+            "src": "/favicon.ico"
+        },
+        {
+            "sizes": "192x192",
+            "src": "/icons/launcher_192.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "512x512",
+            "src": "/icons/launcher_512.png",
+            "type": "image/png"
+        },
+        {
+            "purpose": "maskable",
+            "sizes": "1024x1024",
+            "src": "/icons/launcher_maskable.png",
+            "type": "image/png"
+        }
+    ],
+    "name": "liolok.com/zhs/",
+    "short_name": "李皓奇",
+    "start_url": "/zhs/"
+}
