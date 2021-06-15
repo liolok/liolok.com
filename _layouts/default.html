@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="manifest" href="{% if page.lang == "zh-Hans" %}/zhs{% endif %}/manifest.json">
 {% seo %}
 <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 {% if page.katex %} {%- comment -%} https://katex.org/docs/browser.html {%- endcomment -%}
