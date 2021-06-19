@@ -32,7 +32,7 @@ Yes this is showing off, it's not that simple on most of other platforms.
 
 #### Node.js
 
-Go to [Download | Node.js](https://nodejs.org/en/download/),
+Go to [Download - Node.js](https://nodejs.org/en/download/),
 choose and install the latest 64-bit LTS version.
 
 After installation, run `node -v` and `npm -v` to verify
@@ -121,7 +121,7 @@ soon we'll arrive at "*username*.github.io" online.
 
 [ci-article]: htts://liolok.com/zhs/deploy-hexo-blog-with-git-and-travis-ci/
 
-Reference: [One-Command Deployment | Hexo](https://hexo.io/docs/one-command-deployment#Git)
+Reference: [One-Command Deployment - Hexo](https://hexo.io/docs/one-command-deployment#Git)
 
 #### Install Deployer Plugin
 
