@@ -23,7 +23,7 @@ local machine, and talk about how to publish it to GitHub Pages, which would use
 On Arch Linux, you need just one command to do all the work below with your favorite AUR helper:
 
 ```shell
-$ yay --sync nodejs-hexo-cli git
+$ yay --sync hexo-cli git
 ```
 
 Then you can skip to [initialize instance](#initialize-instance) step.
