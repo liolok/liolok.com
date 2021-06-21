@@ -25,17 +25,25 @@ Then I could see the characters clear, for more information go read the ArchWiki
 
 Run `wifi-menu` or just plug in phone with USB tethering to connect network, and `ping archlinux.org -c 4` to verify.
 
+### Fake RAID
+
 `lsblk` / `fdisk -l` to check hard drive, no NVMe SSD shown, what the...
 
 Thanks to Intel's iRST, Linux couldn't access SSD out-of-box under fake RAID mode, need to change SATA mode to AHCI.
 
-But there's no option to change SATA mode in BIOS settings, lots of options are hiden, you got me Acer.
+But there's no option to change SATA mode in BIOS settings, lots of options are hidden, you got me Acer.
 
-After tons of search I got the solution in this [thread][acer-sdd-thread]: Press `Ctrl + S` in "Main" tab of BIOS settings, then the option will show up.
+After tons of search I got the solution in this [thread][acer-thread]: Press `Ctrl + S` in "Main" tab of BIOS settings, then the option will show up.
+
+[acer-thread]: https://community.acer.com/en/discussion/583248/change-sata-mode-to-ahci "Change SATA mode to AHCI - Acer Aspire 3 A315-54K-59NZ — Acer Community"
+
+![Hidden SATA Mode](./sata-mode.webp "Hidden SATA Mode")
 
 This is the first and last time I buy from Acer, that's it.
 
 After changing SATA mode to AHCI, reboot into archiso then start installation over again.
+
+---
 
 Set large font, connect network, check hard drive, now there should be a `nvme0n1` device.
 
@@ -54,7 +62,7 @@ Run `lsblk -o+partlabel` to see partitions status now, then format and mount the
 
 ## Installation
 
-Run `nano /etc/pacman.d/mirrorlist` to select a closer or prefered mirror server:
+Run `nano /etc/pacman.d/mirrorlist` to select a closer or preferred mirror server:
 
 `Ctrl + W` and search for country or domain, uncomment the line then `Ctrl + O` to save and `Ctrl + X` to exit.
 
@@ -101,7 +109,7 @@ options root=PARTLABEL=ALL rw
 
 > Keep in mind that the `options` line contains kernel parameters and may be mentioned later.
 
-A minial installation is basically completed now, `Ctrl + D` or `exit` to quit `arch-chroot` and `umount -R /mnt` then reboot into Arch Linux.
+A minimal installation is basically completed now, `Ctrl + D` or `exit` to quit `arch-chroot` and `umount -R /mnt` then reboot into Arch Linux.
 
 ## Post-installation
 
@@ -126,7 +134,7 @@ Kernel boot parameters (append to `options` line of `/boot/loader/entries/arch.c
 
 Kernel modules parameters (new lines to `/etc/modprobe.d/swift313-52.conf`):
 
-- `options snd-intel-dspcfg dsp_driver=1` to use DSP sound driver (legacy) instead of SOF (after linux-5.4) to **fix no sound issue** ("dummpy output" in Gnome settings);
+- `options snd-intel-dspcfg dsp_driver=1` to use DSP sound driver (legacy) instead of SOF (after linux-5.4) to **fix no sound issue** ("dummy output" in Gnome settings);
 - `options snd-hda-intel model=dell-headset-multi` to detect headset mic for sound capture;
 - `options snd-hda-intel power_save=1` for sound power saving.
 
