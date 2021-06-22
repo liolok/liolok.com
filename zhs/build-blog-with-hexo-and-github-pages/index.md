@@ -26,7 +26,7 @@ Hexo 是一个基于 **Node.js** 的博客框架。在本文中，我们会在�
 在 Arch Linux 上，只需一行命令即可做到本节下文所有事情（需要已装好一款 AUR helper）:
 
 ```shell
-$ yay --sync hexo-cli git
+$ yay --sync hexo-cli git npm
 ```
 
 然后就可以直接跳到[创建实例](#创建实例)步骤。
