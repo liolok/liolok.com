@@ -81,6 +81,10 @@ for share_link in share_links:
 print(configs)
 ```
 
+> Note: You may have to [add padding][padding] to `url.netloc`.
+
+[padding]: https://github.com/liolok/blog-hexo/issues/36#issuecomment-646955535
+
 Finally we get a list of json objects, each of them contains a server configuraion:
 
 ![Configurations](./configurations.png)

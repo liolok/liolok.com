@@ -86,6 +86,10 @@ for share_link in share_links:
 print(configs)
 ```
 
+> 注意：`url.netloc` 可能需要[填充（padding）][padding]。
+
+[padding]: https://github.com/liolok/blog-hexo/issues/36#issuecomment-646955535
+
 最后，我们得到一个 json 对象列表，其中每一个都包含一个节点配置：
 
 ![节点配置列表](../../v2ray-subscription-parse/configurations.png)
