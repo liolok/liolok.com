@@ -1,0 +1,69 @@
+Start Failed: Internal error. Please refer to https://code.google.com/p/android/issues
+
+com.intellij.ide.plugins.StartupAbortedException: UI initialization failed
+at com.intellij.idea.StartupUtil.lambda$prepareApp$3(StartupUtil.java:194)
+at java.base/java.util.concurrent.CompletableFuture.uniExceptionally(CompletableFuture.java:986)
+at java.base/java.util.concurrent.CompletableFuture$UniExceptionally.tryFire(CompletableFuture.java:970)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+at com.intellij.idea.StartupUtil.lambda$scheduleInitUi$9(StartupUtil.java:375)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+at java.base/java.security.AccessController.doPrivileged(Native Method)
+at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.util.concurrent.CompletionException: java.lang.UnsatisfiedLinkError: /home/android/studio/jre/lib/libawt_xawt.so: libXext.so.6: cannot open shared object file: No such file or directory
+at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+at java.base/java.util.concurrent.CompletableFuture$BiRelay.tryFire(CompletableFuture.java:1423)
+... 10 more
+Caused by: java.lang.UnsatisfiedLinkError: /home/android/studio/jre/lib/libawt_xawt.so: libXext.so.6: cannot open shared object file: No such file or directory
+at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method)
+at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2442)
+at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2498)
+at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2694)
+at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2627)
+at java.base/java.lang.Runtime.load0(Runtime.java:768)
+at java.base/java.lang.System.load(System.java:1837)
+at java.base/java.lang.ClassLoader$NativeLibrary.load0(Native Method)
+at java.base/java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:2442)
+at java.base/java.lang.ClassLoader$NativeLibrary.loadLibrary(ClassLoader.java:2498)
+at java.base/java.lang.ClassLoader.loadLibrary0(ClassLoader.java:2694)
+at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2648)
+at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:830)
+at java.base/java.lang.System.loadLibrary(System.java:1873)
+at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1395)
+at java.desktop/java.awt.Toolkit$3.run(Toolkit.java:1393)
+at java.base/java.security.AccessController.doPrivileged(Native Method)
+at java.desktop/java.awt.Toolkit.loadLibraries(Toolkit.java:1392)
+at java.desktop/java.awt.Toolkit.<clinit>(Toolkit.java:1430)
+at java.desktop/java.awt.EventQueue.invokeLater(EventQueue.java:1318)
+at com.intellij.idea.StartupUtil.lambda$scheduleInitUi$9(StartupUtil.java:326)
+... 7 more
+
+-----
+JRE 11.0.8+0-b944-P17168821 amd64 by N/A
+/home/android/studio/jre
+
+Also, a UI exception occurred on an attempt to show the above message:
+java.lang.NoClassDefFoundError: Could not initialize class java.awt.Toolkit
+at java.desktop/java.awt.Component.<clinit>(Component.java:628)
+at com.intellij.idea.Main.showMessage(Main.java:248)
+at com.intellij.idea.Main.showMessage(Main.java:224)
+at com.intellij.ide.plugins.StartupAbortedException.logAndExit(StartupAbortedException.java:83)
+at com.intellij.ide.plugins.StartupAbortedException.processException(StartupAbortedException.java:33)
+at com.intellij.idea.StartupUtil.lambda$prepareApp$3(StartupUtil.java:194)
+at java.base/java.util.concurrent.CompletableFuture.uniExceptionally(CompletableFuture.java:986)
+at java.base/java.util.concurrent.CompletableFuture$UniExceptionally.tryFire(CompletableFuture.java:970)
+at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+at com.intellij.idea.StartupUtil.lambda$scheduleInitUi$9(StartupUtil.java:375)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:668)
+at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:665)
+at java.base/java.security.AccessController.doPrivileged(Native Method)
+at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:665)
+at java.base/java.lang.Thread.run(Thread.java:834)
