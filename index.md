@@ -2,6 +2,7 @@
 
 ## Articles
 
+- [Android Studio Containerized with systemd-nspawn](containerize-android-studio-with-systemd-nspawn/)
 - [Run Desktop App with systemd-nspawn Container](run-desktop-app-with-systemd-nspawn-container/)
 - [Oculus Quest 2 Usage Note](oculus-quest-2-usage-note/)
 

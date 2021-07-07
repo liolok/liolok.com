@@ -6,6 +6,7 @@ lang: zh-Hans
 
 ## 文章
 
+- [使用 systemd-nspawn 容器化 Android Studio](containerize-android-studio-with-systemd-nspawn/)
 - [Oculus Quest 2 使用笔记](oculus-quest-2-usage-note/)
 - [Linux 内核编译及添加系统调用](kernel-compilation-with-custom-syscall/)
 
