@@ -1,0 +1,5 @@
+user-agent: *
+disallow: /*.json$
+disallow: /*.jsonc$
+disallow: /*.log$
+disallow: /*.pdf$
