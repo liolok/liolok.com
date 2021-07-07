@@ -9,8 +9,15 @@
   <link href="https://liolok.com/" rel="alternate" />
   <link href="https://liolok.com/atom.xml" rel="self" />
   <icon>https://liolok.com/favicon.ico</icon>
-  <rights>© 2018 - 2020 liolok</rights>
-  <updated>2021-05-08T00:00:00Z</updated>
+  <rights>© 2018 - 2021 liolok</rights>
+  <updated>2021-07-07T10:00:00Z</updated>
+
+  <entry>
+    <updated>2021-07-07T10:00:00Z</updated>
+    <title>Containerize Android Studio with systemd-nspawn</title>
+    <id>https://liolok.com/containerize-android-studio-with-systemd-nspawn/</id>
+    <link href="https://liolok.com/containerize-android-studio-with-systemd-nspawn/" rel="alternate" />
+  </entry>
 
   <entry>
     <updated>2021-05-28T00:00:00Z</updated>
