@@ -16,14 +16,14 @@ lang: zh-Hans
 
 ## 目录
 
-- [基本表的建立与修改](基本表的建立与修改)
-- [SELECT 语句的基本使用](select-语句的基本使用)
-- [SELECT 语句的嵌套使用](select-语句的嵌套使用)
-- [SQL 的存储操作](sql-的存储操作)
-- [视图的建立及操作](视图的建立及操作)
-- [创建触发器和存储过程](创建触发器和存储过程)
-- [查询语句及关系代数](查询语句及关系代数)
-- [参考资料](参考资料)
+- [基本表的建立与修改](#基本表的建立与修改)
+- [SELECT 语句的基本使用](#select-语句的基本使用)
+- [SELECT 语句的嵌套使用](#select-语句的嵌套使用)
+- [SQL 的存储操作](#sql-的存储操作)
+- [视图的建立及操作](#视图的建立及操作)
+- [创建触发器和存储过程](#创建触发器和存储过程)
+- [查询语句及关系代数](#查询语句及关系代数)
+- [参考资料](#参考资料)
 
 ## 基本表的建立与修改
 
@@ -41,7 +41,7 @@ lang: zh-Hans
 | Sage   | smallint    | 可       | 年龄         |
 | Clno   | char(5)     | 否       | 所在班级     |
 
-```SQL
+```sql
 -- 建立学生表
 CREATE TABLE Student(
   Sno char(7) NOT NULL UNIQUE,
@@ -64,7 +64,7 @@ CREATE TABLE Student(
 | 2001103 | 陈宝玉 | 男   | 20   | 01311 |
 | 2001104 | 张逸凡 | 男   | 21   | 01311 |
 
-```SQL
+```sql
 -- 填充学生表
 INSERT INTO Student VALUES('2000101', '李勇', '男', 20, '00311');
 INSERT INTO Student VALUES('2000102', '刘诗晨', '女', 19, '00311');
@@ -86,7 +86,7 @@ INSERT INTO Student VALUES('2001104', '张逸凡', '男', 21, '01311');
 | Cname  | varchar(20) | 否       | 课程名称       |
 | Credit | smallint    | 可       | 学分           |
 
-```SQL
+```sql
 -- 建立课程表
 CREATE TABLE Course(
   Cno char(1) NOT NULL UNIQUE,
@@ -106,7 +106,7 @@ CREATE TABLE Course(
 | 6   | 数据处理     | 2      |
 | 7   | C语言        | 4      |
 
-```SQL
+```sql
 -- 填充课程表
 INSERT INTO Course VALUES('1', '数据库', 4);
 INSERT INTO Course VALUES('2', '离散数学', 3);
@@ -129,7 +129,7 @@ INSERT INTO Course VALUES('7', 'C语言', 4);
 | Number     | int         | 可       | 班级人数       |
 | Monitor    | char(7)     | 可       | 班长学号       |
 
-```SQL
+```sql
 -- 建立班级表
 CREATE TABLE Class(
   Clno char(5) NOT NULL UNIQUE,
@@ -147,7 +147,7 @@ CREATE TABLE Class(
 | 00312 | 计算机应用 | 2000   | 140    | 2000103 |
 | 01311 | 计算机软件 | 2001   | 220    | 2001103 |
 
-```SQL
+```sql
 -- 填充班级表
 INSERT INTO Class VALUES('00311', '计算机软件', '2000', 120, '2000101');
 INSERT INTO Class VALUES('00312', '计算机应用', '2000', 140, '2000103');
@@ -164,7 +164,7 @@ INSERT INTO Class VALUES('01311', '计算机软件', '2001', 220, '2001103');
 | Cno    | char(1)       | 否       | 课程号 |
 | Gmark  | numeric(4, 1) | 可       | 成绩   |
 
-```SQL
+```sql
 -- 建立成绩表
 CREATE TABLE Grade(
   Sno char(7) NOT NULL,
@@ -195,7 +195,7 @@ CREATE TABLE Grade(
 | 2001103 | 4   | 56    |
 | 2001103 | 7   | 88    |
 
-```SQL
+```sql
 -- 填充成绩表
 INSERT INTO Grade VALUES('2000101', '1', 92);
 INSERT INTO Grade VALUES('2000101', '3', NULL);
@@ -219,7 +219,7 @@ INSERT INTO Grade VALUES('2001103', '7', 88);
 
 ### 基本表的修改
 
-```SQL
+```sql
 -- 习题 3.11
 
 -- (1) 给学生表增加一属性 Nation（民族），数据类型为 Varchar(20)；
@@ -252,7 +252,7 @@ DROP INDEX Student.IX_Class;
 
 ## SELECT 语句的基本使用
 
-```SQL
+```sql
 -- 习题 3.12
 
 -- (1) 找出所有被学生选修了的课程号；
@@ -301,7 +301,7 @@ SELECT DISTINCT Sname
 
 ## SELECT 语句的嵌套使用
 
-```SQL
+```sql
 -- 习题 3.13
 
 -- (1) 找出与李勇在同一个班级的学生信息；
@@ -341,7 +341,7 @@ SELECT Sname FROM Student S
 --- （找出没有一门课程是其未选修的学生姓名）
 ```
 
-```SQL
+```sql
 -- 习题 3.14
 
 -- (1) 查询选修了 3 号课程的学生学号及其成绩，并按成绩降序排列；
@@ -365,7 +365,7 @@ SELECT Sno FROM Grade
 
 ## SQL 的存储操作
 
-```SQL
+```sql
 -- 习题 3.15
 
 -- (1) 将 01311 班的全体学生的成绩置零；
@@ -404,7 +404,7 @@ UPDATE Class
 
 ## 视图的建立及操作
 
-```SQL
+```sql
 -- 习题 3.16
 
 -- (1) 建立 01311 班选修了 1 号课程的学生视图 Stu_01311_1；
@@ -440,7 +440,7 @@ SELECT * FROM Stu_year
 
 ## 创建触发器和存储过程
 
-```SQL
+```sql
 -- 在查询分析器（Query Analyzer）中创建以下触发器，并验证其语法的正确性：
 
 -- 1.
@@ -494,7 +494,7 @@ AS
 - `SC` 是学生选课关系，`Sno`：学号，`Cno`：课程号，`Grade`：成绩；
 - `C` 是课程关系，`Cno`：课程号，`Cname`：课程名，`Period`：学时，`Teacher`：任课教师。
 
-```SQL
+```sql
 -- 查询选修了课程名为 DB 的学生姓名和所在班级
 -- ΠSname,Class(S∞SC∞σCname='DB'(C))
 SELECT Sname, Class FROM S
@@ -502,20 +502,20 @@ SELECT Sname, Class FROM S
     WHERE SC.Cno = C.Cno AND Cname = 'DB');
 ```
 
-```SQL
+```sql
 -- 查询 LIU 老师所授课程的课程号和课程名
 -- ΠCno,Cname(σTeacher='LIU'(C))
 SELECT Cno, Cname FROM C WHERE Teacher = 'LIU';
 ```
 
-```SQL
+```sql
 -- 查询学号为 S3 学生所学课程的课程名与任课教师名
 -- ΠCname,Teacher(σSno='S3'(S∞SC))
 SELECT Cname, Teacher FROM SC, C
   WHERE SC.Cno = C.Cno AND Sno = 'S3';
 ```
 
-```SQL
+```sql
 -- 查询至少选修 LIU 老师所授课程中一门课程的女学生的姓名
 -- ΠSname(σSex='女'∧Teacher='LIU'(S∞SC∞C))
 SELECT Sname FROM S
@@ -524,7 +524,7 @@ SELECT Sname FROM S
       WHERE SC.Cno = C.Cno AND Teacher = 'LIU'));
 ```
 
-```SQL
+```sql
 -- 查询 WANG 同学不学的课程号
 -- ΠCno(C)-ΠCno(σSname='WANG'(S∞SC))
 SELECT Cno FROM C
@@ -532,14 +532,14 @@ SELECT Cno FROM C
     WHERE S.Sno = SC.Sno AND Sname = 'WANG');
 ```
 
-```SQL
+```sql
 -- 查询至少选修两门课程的学生学号
 -- ΠSno(σ1=4∧2≠5(SC×SC))
 -- （SC 自乘之后，同一个学号（1、4 列）下两个课程号（2、5 列）不同的元组）
 SELECT Sno FROM SC GROUP BY Sno HAVING COUNT(Cno) >＝ 2;
 ```
 
-```SQL
+```sql
 -- 查询全部学生都选修的课程的课程号和课程名
 -- ΠCno,Cname(SC∞(ΠSno,Cno(SC)÷ΠSno(S)))
 -- （涉及到全部值时，应用除法，“除数”是全部量）
@@ -549,32 +549,32 @@ SELECT Cno, Cname FROM C
       WHERE S.Sno = SC.Sno AND SC.Cno = C.Cno));
 ```
 
-```SQL
+```sql
 -- 查询选修课程包含 LIU 老师所授课程的学生学号
 -- ΠSno(σTeacher='LIU'(SC∞C))
 SELECT Sno FROM SC, C
   WHERE SC.Cno = C.Cno AND Teacher = 'LIU'));
 ```
 
-```SQL
+```sql
 -- 统计有学生选修的课程门数
 SELECT COUNT(DISTINCT Cno) FROM SC;
 ```
 
-```SQL
+```sql
 -- 求选修 C4 课程的学生的平均年龄
 SELECT AVG(Age) FROM S
   WHERE Sno IN (SELECT Sno FROM SC WHERE Cno = 'C4');
 ```
 
-```SQL
+```sql
 -- 求 LIU 老师所授课程的每门课程的学生平均成绩
 SELECT Cno, AVG(Grade) FROM SC
   WHERE Cno IN (SELECT Cno FROM C WHERE Teacher = 'LIU')
   GROUP BY Cno;
 ```
 
-```SQL
+```sql
 -- 统计每门课程的学生选修人数（超过 10 人的课程才统计）
 -- 要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列
 SELECT DISTINCT Cno, COUNT(Sno) FROM SC
@@ -583,30 +583,30 @@ SELECT DISTINCT Cno, COUNT(Sno) FROM SC
   ORDER BY COUNT(Sno) DESC, Cno;
 ```
 
-```SQL
+```sql
 -- 查询学号比 WANG 同学大，而年龄比他小的学生姓名
 SELECT X.Sname FROM S X, S Y
   WHERE X.Sno > Y.Sno AND X.Age < Y.Age AND Y.Sname = 'WANG';
 ```
 
-```SQL
+```sql
 -- 查询姓名以 WANG 打头的所有学生的姓名和年龄
 SELECT Sname, Age FROM S WHERE Sname LIKE 'WANG%';
 ```
 
-```SQL
+```sql
 -- 在 SC 中检索成绩为空值的学生学号和课程号
 SELECT Sno, Cno FROM SC WHERE Grade IS NULL;
 ```
 
-```SQL
+```sql
 -- 求年龄大于女同学平均年龄的男学生姓名和年龄
 SELECT Sname, Age FROM S X
   WHERE X.Sex = '男'
     AND X.Age > (SELECT AVG(Age) FROM S Y WHERE Y.Sex = '女');
 ```
 
-```SQL
+```sql
 -- 求年龄大于所有女同学年龄的男学生姓名和年龄
 SELECT Sname, Age FROM S X
   WHERE X.Sex = '男'
