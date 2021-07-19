@@ -7,6 +7,7 @@ no_comment: true
 
 ## 文章
 
+- [折腾中国移动家用宽带](china-mobile-home-broadband/)
 - [使用 systemd-nspawn 容器化 Android Studio](containerize-android-studio-with-systemd-nspawn/)
 - [Oculus Quest 2 使用笔记](oculus-quest-2-usage-note/)
 - [Linux 内核编译及添加系统调用](kernel-compilation-with-custom-syscall/)
