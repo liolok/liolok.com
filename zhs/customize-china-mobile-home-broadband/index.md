@@ -4,8 +4,8 @@
 - [源码][source]
 - [网页][page]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/china-mobile-home-broadband/index.md
-[page]: https://liolok.com/zhs/china-mobile-home-broadband/
+[source]: https://github.com/liolok/liolok.com/blob/master/zhs/customize-china-mobile-home-broadband/index.md
+[page]: https://liolok.com/zhs/customize-china-mobile-home-broadband/
 
 ---
 
