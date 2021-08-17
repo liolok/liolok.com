@@ -134,7 +134,7 @@ $codename $container_name $repository_url
 
 ## 包装一下
 
-- [fish-shell 脚本][script]: my `systemd-nspawn` wrap-up
+- [fish-shell 脚本][script]：包装 `systemd-nspawn` 命令
 - [桌面文件][desktop-entry]
 
 [script]: https://github.com/liolok/dotfiles/blob/master/.local/bin/steam
@@ -168,8 +168,6 @@ $codename $container_name $repository_url
 > 来源：[AngrySpaceElf@ProtonDB](https://www.protondb.com/app/3590#l7L1gAH52v)
 
 使用非 DRM 版本的可执行文件（3.4MiB）替换 DRM 版（5.1MiB）。
-
-I uploaded my non-DRM version executable
 
 我把自己的非 DRM 版可执行文件上传到了[这里](../../containerize-steam-with-systemd-nspawn/pvz-non-drm.tar)，附带了它的
 SHA-256 校验和：`cdddfb30f50510afa389de4966089a1ac1a9a2bf09fb8d0aa0793178b0814cd1`
