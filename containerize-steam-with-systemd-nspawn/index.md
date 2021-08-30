@@ -1,6 +1,7 @@
 # Containerize Steam with systemd-nspawn
 
 - Published on August 16 of 2021
+- Updated on August 31 of 2021
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
@@ -25,6 +26,8 @@
     - [No Sound](#no-sound)
   - [Plants vs. Zombies GOTY Edition](#plants-vs-zombies-goty-edition)
     - [FPS Drop During Plant Selection](#fps-drop-during-plant-selection)
+  - [Beholder](#beholder)
+    - [Blank CJK Fonts](#blank-cjk-fonts)
 
 ---
 
@@ -165,8 +168,6 @@ Solutions:
 
 #### FPS Drop During Plant Selection
 
-Solution:
-
 > Source: [AngrySpaceElf@ProtonDB](https://www.protondb.com/app/3590#l7L1gAH52v)
 
 Replace DRM version executable (5.1MiB) with non-DRM version (3.4MiB).
@@ -186,3 +187,21 @@ Here's complete steps to extract non-DRM version executable and replace then:
 Where is library folder? Go to "Settings->Downloads->Content Libraries" to open library folders configuration dialog:
 
 ![library-folders](steam-library-folders.png)
+
+### Beholder
+
+#### Blank CJK Fonts
+
+> Source: [求助，游戏打开后没有字 :: Beholder General Discussions](https://steamcommunity.com/app/475550/discussions/0/2592234299563997618/?ctp=2#c1480982971155734475)
+
+This game exactly depends on font "WenQuanYi Micro Hei", on Ubuntu 20.04 its package is `fonts-wqy-microhei`:
+
+```console
+# systemd-nspawn --machine=steam --bind-ro=/etc/resolv.conf apt install fonts-wqy-microhei
+```
+
+If not working, you may need a manually refresh of `fontconfig`:
+
+```console
+# systemd-nspawn --machine=steam fc-cache --force --verbose
+```

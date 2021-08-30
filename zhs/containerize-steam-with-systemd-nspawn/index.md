@@ -1,6 +1,7 @@
 # 使用 systemd-nspawn 容器化 Steam
 
 - 发布于 2021 年 8 月 16 日
+- 更新于 2021 年 8 月 31 日
 - [源码][source]
 - [网页][page_zhs]以及[英文版][page]
 
@@ -25,6 +26,8 @@
     - [没声音](#没声音)
   - [植物大战僵尸年度版](#植物大战僵尸年度版)
     - [植物选择界面掉帧](#植物选择界面掉帧)
+  - [Beholder](#beholder)
+    - [中日韩字体空白](#中日韩字体空白)
 
 ---
 
@@ -163,8 +166,6 @@ $codename $container_name $repository_url
 
 #### 植物选择界面掉帧
 
-解决方案：
-
 > 来源：[AngrySpaceElf@ProtonDB](https://www.protondb.com/app/3590#l7L1gAH52v)
 
 使用非 DRM 版本的可执行文件（3.4MiB）替换 DRM 版（5.1MiB）。
@@ -184,3 +185,21 @@ SHA-256 校验和：`cdddfb30f50510afa389de4966089a1ac1a9a2bf09fb8d0aa0793178b08
 库文件夹在哪儿？到「设置 -> 下载 -> 内容库」打开配置对话框：
 
 ![library-folders](steam-library-folders.png)
+
+### Beholder
+
+#### 中日韩字体空白
+
+> Source: [求助，游戏打开后没有字 :: Beholder General Discussions](https://steamcommunity.com/app/475550/discussions/0/2592234299563997618/?ctp=2#c1480982971155734475)
+
+这个游戏严格依赖「文泉驿微米黑」字体，在 Ubuntu 20.04 上其包名为 `fonts-wqy-microhei`：
+
+```console
+# systemd-nspawn --machine=steam --bind-ro=/etc/resolv.conf apt install fonts-wqy-microhei
+```
+
+如果没效果，可能需要手动刷新一下 `fontconfig`：
+
+```console
+# systemd-nspawn --machine=steam fc-cache --force --verbose
+```
