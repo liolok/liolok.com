@@ -10,6 +10,7 @@ Keep it simple and stupid.
 
 ## Credits
 
+- Inspired by [xieyuheng/xieyuheng.github.io](https://github.com/xieyuheng/xieyuheng.github.io)
 - Served by [CloudFlare][cloudflare] DNS and CDN
 - Hosted on [GitHub Pages][gh-pages]
     - Default static site generator [Jekyll][generator]
