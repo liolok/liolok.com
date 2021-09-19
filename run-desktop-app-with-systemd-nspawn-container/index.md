@@ -156,6 +156,8 @@ Here is what I understood for my own usage:
 | /dev/shm       | Shared memory                       |
 | /dev/input/js0 | First joystick                      |
 
+> Note: For NVIDIA cards, you may need to bind mount `/dev/nvidia*` to make it work.
+
 Mounting device directory/file is not enough,
 you also need to grant corresponding access to specific device nodes by [`DeviceAllow=`][device-allow] property.
 
