@@ -1,3 +1,7 @@
+---
+lang: zh-Hans
+---
+
 # 使用 systemd-nspawn 容器化 Android Studio
 
 ## 关于本文

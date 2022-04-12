@@ -1,3 +1,7 @@
+---
+lang: zh-Hans
+---
+
 # 使用 systemd-nspawn 容器化 Steam
 
 - 发布于 2021 年 8 月 16 日
