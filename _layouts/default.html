@@ -24,13 +24,16 @@ https://cdnjs.com/libraries/KaTeX
 <div class="container-lg px-3 my-5 markdown-body">
 <h1><code><a title="Home Page" href="/">cd ~</a>{,<a title="首页" href="/zhs/">/zhs/</a>}</code></h1>
 {{ content }}
-{% unless page.no_comment %} {%- comment -%} https://giscus.app {%- endcomment -%}
+{% unless page.no_comment %}
+{%- comment -%} https://giscus.app {%- endcomment -%}
 <script src="https://giscus.app/client.js"
 data-repo="liolok/liolok.com"
 data-repo-id="MDEwOlJlcG9zaXRvcnkzNzI2MTE5MDM="
 data-category-id="DIC_kwDOFjWbP84B-Sa1"
 data-mapping="og:title"
+data-input-position="top"
 data-theme="light"
+data-lang="{% if page.lang == "zh-Hans" %}zh-CN{% else %}en{% endif %}"
 crossorigin="anonymous"
 async>
 </script>
