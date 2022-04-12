@@ -9,10 +9,14 @@
 <link rel="manifest" href="{% if page.lang == "zh-Hans" %}/zhs{% endif %}/manifest.json">
 {% seo %}
 <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-{% if page.katex %} {%- comment -%} https://katex.org/docs/browser.html {%- endcomment -%}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+{% if page.katex %}
+{%- comment -%}
+https://katex.org/docs/browser.html
+https://cdnjs.com/libraries/KaTeX
+{%- endcomment -%}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css" integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.js" integrity="sha512-aMDiFsrEV3KzAn9EHwyBRS7y1APjZWt/Z/73ukLN2Ca2KcGGzlOQFQSnfOdnEcehpwMaQ8edlDB/0cMX2GsHbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/contrib/auto-render.min.js" integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="renderMathInElement(document.body);"></script>
 {% endif %}
 <link href="{% if page.lang == "zh-Hans" %}/zhs{% endif %}/atom.xml" type="application/atom+xml" rel="alternate">
 </head>
