@@ -14,9 +14,15 @@
 https://katex.org/docs/browser.html
 https://cdnjs.com/libraries/KaTeX
 {%- endcomment -%}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css" integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.js" integrity="sha512-aMDiFsrEV3KzAn9EHwyBRS7y1APjZWt/Z/73ukLN2Ca2KcGGzlOQFQSnfOdnEcehpwMaQ8edlDB/0cMX2GsHbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/contrib/auto-render.min.js" integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="renderMathInElement(document.body);"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css"
+integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw=="
+crossorigin="anonymous" referrerpolicy="no-referrer">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.js"
+integrity="sha512-aMDiFsrEV3KzAn9EHwyBRS7y1APjZWt/Z/73ukLN2Ca2KcGGzlOQFQSnfOdnEcehpwMaQ8edlDB/0cMX2GsHbg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/contrib/auto-render.min.js"
+integrity="sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw=="
+crossorigin="anonymous" referrerpolicy="no-referrer" onload="renderMathInElement(document.body);"></script>
 {% endif %}
 <link href="{% if page.lang == "zh-Hans" %}/zhs{% endif %}/atom.xml" type="application/atom+xml" rel="alternate">
 </head>
@@ -35,8 +41,7 @@ data-input-position="top"
 data-theme="light"
 data-lang="{% if page.lang == "zh-Hans" %}zh-CN{% else %}en{% endif %}"
 crossorigin="anonymous"
-async>
-</script>
+async></script>
 {% endunless %}
 <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
 © 2018 - 2021 {% if page.lang == "zh-Hans" %}李皓奇{% else %}liolok{% endif %}
@@ -46,13 +51,21 @@ target="_blank">CC BY-NC 4.0</a><br>
 <a href="{% if page.lang == "zh-Hans" %}/zhs{% endif %}/atom.xml" target="_blank">RSS Feed</a>
 </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js" integrity="sha256-0WMZ9PF4b2hTF66Eglv/9H5Vwk6lnOG4AbmCJxo96WQ=" crossorigin="anonymous"></script>
+{%- comment -%}
+https://www.bryanbraun.com/anchorjs/
+https://cdnjs.com/libraries/anchor-js
+{%- endcomment -%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js"
+integrity="sha512-zPB79j2C+3sFS9zcA3vg/z6bVKzJVEyu9pY5w89akQRys76zpAT2t6S3wZKla3QQ14O5l/Yt0RUQ/DHXx82Y5g=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>anchors.add();</script>
 {%- comment -%}
 https://getquick.link/
 https://cdnjs.com/libraries/quicklink
 {%- endcomment -%}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js" integrity="sha512-9lrH9hXkNpnDz1iDI3I0LQPXRr/emqOUTwqkprXRjK+ov2dbtNtcHh2GondAmrvQ7sJJSUJVeTnMK1MQLVfeaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>window.addEventListener('load', () => { quicklink.listen({ ignores: [ uri => uri.includes('#')] }); });</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js"
+integrity="sha512-9lrH9hXkNpnDz1iDI3I0LQPXRr/emqOUTwqkprXRjK+ov2dbtNtcHh2GondAmrvQ7sJJSUJVeTnMK1MQLVfeaA=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>window.addEventListener('load', () => { quicklink.listen({ ignores: [ uri => uri.includes('#') ] }); });</script>
 </body>
 </html>
