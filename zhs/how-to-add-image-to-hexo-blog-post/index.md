@@ -115,4 +115,4 @@ $ npm i --save hexo-asset-link
 
 这是关于这个方案的官方[文档](https://hexo.io/zh-cn/docs/asset-folders.html#相对路径引用的标签插件 "相对路径引用的标签插件")，我甚至不想在自己的博客里写出来。这里是英文版文档页面下放的最热评论：
 
-![关于标签插件语法的最热评论](../../how-to-add-image-to-hexo-blog-post/top-commets-of-tag-syntax.png "关于标签插件语法的最热评论")
+![关于标签插件语法的最热评论](../../how-to-add-image-to-hexo-blog-post/top-commets-of-tag-syntax.webp "关于标签插件语法的最热评论")
