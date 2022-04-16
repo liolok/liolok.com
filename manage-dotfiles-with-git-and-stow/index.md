@@ -6,7 +6,7 @@
 - [Source code][source]
 - [Web page][page]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/manage-dotfiles-with-git-and-stow/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/manage-dotfiles-with-git-and-stow/index.md
 [page]: https://liolok.com/manage-dotfiles-with-git-and-stow
 
 I use only git and tons of `.gitignore` files to manage my dotfiles now, this article is reserved only for reference.

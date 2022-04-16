@@ -6,7 +6,7 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/run-ss-and-mtproxy-server-on-aws/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/run-ss-and-mtproxy-server-on-aws/index.md
 [page]: https://liolok.com/run-ss-and-mtproxy-server-on-aws
 [page_zhs]: https://liolok.com/zhs/run-ss-and-mtproxy-server-on-aws
 

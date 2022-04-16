@@ -7,7 +7,7 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/build-blog-with-hexo-and-github-pages/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/build-blog-with-hexo-and-github-pages/index.md
 [page]: https://liolok.com/build-blog-with-hexo-and-github-pages
 [page_zhs]: https://liolok.com/zhs/build-blog-with-hexo-and-github-pages
 

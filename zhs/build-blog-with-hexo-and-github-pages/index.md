@@ -11,7 +11,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]以及[英文版][page_en]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/build-blog-with-hexo-and-github-pages/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/build-blog-with-hexo-and-github-pages/index.md
 [page_en]: https://liolok.com/build-blog-with-hexo-and-github-pages
 [page]: https://liolok.com/zhs/build-blog-with-hexo-and-github-pages
 

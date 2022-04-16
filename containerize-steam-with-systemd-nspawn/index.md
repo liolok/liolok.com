@@ -5,7 +5,7 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/containerize-steam-with-systemd-nspawn/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/containerize-steam-with-systemd-nspawn/index.md
 [page]: https://liolok.com/containerize-steam-with-systemd-nspawn/
 [page_zhs]: https://liolok.com/zhs/containerize-steam-with-systemd-nspawn/
 

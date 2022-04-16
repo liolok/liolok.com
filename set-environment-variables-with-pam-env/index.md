@@ -6,7 +6,7 @@
 - [Source code][source]
 - [Web page][page]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/set-environment-variables-with-pam-env/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/set-environment-variables-with-pam-env/index.md
 [page]: https://liolok.com/set-environment-variables-with-pam-env
 
 **Warning**: Upstream totally deprecated user level configuration, this article is reserved only

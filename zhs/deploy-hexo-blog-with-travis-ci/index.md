@@ -11,7 +11,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/deploy-hexo-blog-with-travis-ci/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/deploy-hexo-blog-with-travis-ci/index.md
 [page]: https://liolok.com/zhs/deploy-hexo-blog-with-travis-ci
 
 本人后来转用 GitHub Actions 或者 GitLab CI，本文仅留作参考。

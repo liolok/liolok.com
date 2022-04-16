@@ -10,7 +10,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]以及[英文版][page_en]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/run-mastodon-server-on-archlinux-vps/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/run-mastodon-server-on-archlinux-vps/index.md
 [page_en]: https://liolok.com/run-mastodon-server-on-archlinux-vps/
 [page]: https://liolok.com/zhs/run-mastodon-server-on-archlinux-vps/
 

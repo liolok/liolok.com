@@ -13,7 +13,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/kernel-compilation-with-custom-syscall/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/kernel-compilation-with-custom-syscall/index.md
 [page]: https://liolok.com/zhs/kernel-compilation-with-custom-syscall/
 
 ## 写在最前

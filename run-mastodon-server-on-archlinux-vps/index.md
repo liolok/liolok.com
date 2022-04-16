@@ -6,7 +6,7 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/run-mastodon-server-on-archlinux-vps/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/run-mastodon-server-on-archlinux-vps/index.md
 [page]: https://liolok.com/run-mastodon-server-on-archlinux-vps
 [page_zhs]: https://liolok.com/zhs/run-mastodon-server-on-archlinux-vps
 

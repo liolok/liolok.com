@@ -10,7 +10,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]以及[英文版][page_en]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/oculus-quest-2-usage-note/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/oculus-quest-2-usage-note/index.md
 [page_en]: https://liolok.com/oculus-quest-2-usage-note/
 [page]: https://liolok.com/zhs/oculus-quest-2-usage-note/
 

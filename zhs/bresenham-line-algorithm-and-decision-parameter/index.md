@@ -11,7 +11,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/bresenham-line-algorithm-and-decision-parameter/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/bresenham-line-algorithm-and-decision-parameter/index.md
 [page]: https://liolok.com/zhs/bresenham-line-algorithm-and-decision-parameter
 
 ## 简单版本

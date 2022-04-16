@@ -6,7 +6,7 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/containerize-android-studio-with-systemd-nspawn/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/containerize-android-studio-with-systemd-nspawn/index.md
 [page]: https://liolok.com/containerize-android-studio-with-systemd-nspawn/
 [page_zhs]: https://liolok.com/zhs/containerize-android-studio-with-systemd-nspawn/
 

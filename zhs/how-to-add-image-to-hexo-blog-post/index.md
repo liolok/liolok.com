@@ -11,7 +11,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]以及[英文版][page_en]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/how-to-add-image-to-hexo-blog-post/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/how-to-add-image-to-hexo-blog-post/index.md
 [page_en]: https://liolok.com/how-to-add-image-to-hexo-blog-post
 [page]: https://liolok.com/zhs/how-to-add-image-to-hexo-blog-post
 

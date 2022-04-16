@@ -9,7 +9,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page_zhs]以及[英文版][page]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/containerize-steam-with-systemd-nspawn/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/containerize-steam-with-systemd-nspawn/index.md
 [page]: https://liolok.com/containerize-steam-with-systemd-nspawn/
 [page_zhs]: https://liolok.com/zhs/containerize-steam-with-systemd-nspawn/
 

@@ -8,7 +8,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/dont-starve-together-client-mod/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/dont-starve-together-client-mod/index.md
 [page]: https://liolok.com/zhs/dont-starve-together-client-mod/
 
 ---

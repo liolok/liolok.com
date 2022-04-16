@@ -10,7 +10,7 @@ lang: zh-Hans
 - [源码][source]
 - [网页][page]以及[英文版][page_en]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/zhs/run-ss-and-mtproxy-server-on-aws/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/run-ss-and-mtproxy-server-on-aws/index.md
 [page_en]: https://liolok.com/run-ss-and-mtproxy-server-on-aws
 [page]: https://liolok.com/zhs/run-ss-and-mtproxy-server-on-aws
 

@@ -7,7 +7,7 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/how-to-add-image-to-hexo-blog-post/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/how-to-add-image-to-hexo-blog-post/index.md
 [page]: https://liolok.com/how-to-add-image-to-hexo-blog-post
 [page_zhs]: https://liolok.com/zhs/how-to-add-image-to-hexo-blog-post
 

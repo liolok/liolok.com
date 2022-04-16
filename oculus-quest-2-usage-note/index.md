@@ -6,7 +6,7 @@
 - [Source code][source]
 - [Web page][page] and [zh-Hans version][page_zhs]
 
-[source]: https://github.com/liolok/liolok.com/blob/master/oculus-quest-2-usage-note/index.md
+[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/oculus-quest-2-usage-note/index.md
 [page]: https://liolok.com/oculus-quest-2-usage-note/
 [page_zhs]: https://liolok.com/zhs/oculus-quest-2-usage-note/
 
