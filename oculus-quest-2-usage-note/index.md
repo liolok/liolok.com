@@ -1,14 +1,11 @@
 # Oculus Quest 2 Usage Note
 
-## Meta Info
-
 - Published at Nov 13 of 2020
-- [Source code][source]
-- [Web page][page] and [zh-Hans version][page_zhs]
+- [Markdown][raw]
+- [Simplified Chinese][zhs]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/oculus-quest-2-usage-note/index.md
-[page]: https://liolok.com/oculus-quest-2-usage-note/
-[page_zhs]: https://liolok.com/zhs/oculus-quest-2-usage-note/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/oculus-quest-2-usage-note/index.md
+[zhs]: https://liolok.com/zhs/oculus-quest-2-usage-note/
 
 ## Facebook Account
 

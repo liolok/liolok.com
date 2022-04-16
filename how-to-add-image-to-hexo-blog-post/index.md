@@ -1,15 +1,12 @@
 # How to Add Image to Hexo Blog Post
 
-## Meta Info
-
 - Published at Apr 14 of 2019
 - Updated at Apr 16 of 2019
-- [Source code][source]
-- [Web page][page] and [zh-Hans version][page_zhs]
+- [Markdown][raw]
+- [Simplified Chinese][zhs]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/how-to-add-image-to-hexo-blog-post/index.md
-[page]: https://liolok.com/how-to-add-image-to-hexo-blog-post
-[page_zhs]: https://liolok.com/zhs/how-to-add-image-to-hexo-blog-post
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/how-to-add-image-to-hexo-blog-post/index.md
+[zhs]: https://liolok.com/zhs/how-to-add-image-to-hexo-blog-post
 
 ## Makrdown Syntax
 

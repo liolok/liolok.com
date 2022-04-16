@@ -4,15 +4,11 @@ lang: zh-Hans
 
 # Bresenham 直线算法及其决策参数
 
-## 关于本文
-
 - 最初发布于 2018 年 4 月 1 日
 - 最后更新于 2018 年 4 月 19 日
-- [源码][source]
-- [网页][page]
+- [Markdown][raw]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/bresenham-line-algorithm-and-decision-parameter/index.md
-[page]: https://liolok.com/zhs/bresenham-line-algorithm-and-decision-parameter
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/bresenham-line-algorithm-and-decision-parameter/index.md
 
 ## 简单版本
 

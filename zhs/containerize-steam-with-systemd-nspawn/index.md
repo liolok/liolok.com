@@ -6,12 +6,11 @@ lang: zh-Hans
 
 - 发布于 2021 年 8 月 16 日
 - 更新于 2021 年 8 月 31 日
-- [源码][source]
-- [网页][page_zhs]以及[英文版][page]
+- [Markdown][raw]
+- [English][en]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/containerize-steam-with-systemd-nspawn/index.md
-[page]: https://liolok.com/containerize-steam-with-systemd-nspawn/
-[page_zhs]: https://liolok.com/zhs/containerize-steam-with-systemd-nspawn/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/containerize-steam-with-systemd-nspawn/index.md
+[en]: https://liolok.com/containerize-steam-with-systemd-nspawn/
 
 ---
 
@@ -109,7 +108,6 @@ $codename $container_name $repository_url
 
 后续我还创建了 `~/library` 目录来作为自定义的 Steam 默认库文件夹，并挂载了一个
 `~/screenshots` 目录以便在宿主机上存储截图。
-
 
 ## 其他准备工作
 

@@ -1,13 +1,9 @@
 # Manage Dotfiles with Git and Stow
 
-## Meta Info
-
 - Published at Sep 28 of 2019
-- [Source code][source]
-- [Web page][page]
+- [Markdown][raw]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/manage-dotfiles-with-git-and-stow/index.md
-[page]: https://liolok.com/manage-dotfiles-with-git-and-stow
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/manage-dotfiles-with-git-and-stow/index.md
 
 I use only git and tons of `.gitignore` files to manage my dotfiles now, this article is reserved only for reference.
 

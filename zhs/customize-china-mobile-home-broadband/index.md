@@ -5,11 +5,9 @@ lang: zh-Hans
 # 折腾中国移动家用宽带
 
 - 发布于 2021 年 7 月 19 日
-- [源码][source]
-- [网页][page]
+- [Markdown][raw]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/customize-china-mobile-home-broadband/index.md
-[page]: https://liolok.com/zhs/customize-china-mobile-home-broadband/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/customize-china-mobile-home-broadband/index.md
 
 ---
 

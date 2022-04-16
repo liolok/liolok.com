@@ -4,8 +4,6 @@ lang: zh-Hans
 
 # 数据库原理题目整理
 
-## 关于本文
-
 - 最初发布于 2018 年 5 月 19 日
 - 最后更新于 2018 年 6 月 29 日
 
@@ -464,7 +462,6 @@ AS
   SELECT @count = Number FROM Class
     WHERE Clno = (SELECT Clno FROM Student WHERE Sno = @Sno)
   RETURN @count
-
 
 -- 3.
 -- 在 Enterprise Manager 中展开 GradeManager 数据库，展开 Trigger，

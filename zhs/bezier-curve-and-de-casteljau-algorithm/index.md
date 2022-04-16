@@ -5,9 +5,10 @@ katex: true
 
 # Bézier 曲线与 De Casteljau 算法
 
-## 关于本文
-
 - 发布于 2018 年 4 月 28 日
+- [Markdown][raw]
+
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/bezier-curve-and-de-casteljau-algorithm/index.md
 
 当年还在用 Windows XP 的时候，就有一个屏保叫「贝塞尔曲线」，我们今天就来看一看它的基本原理以及简单绘制。
 

@@ -4,15 +4,12 @@ lang: zh-Hans
 
 # 使用 systemd-nspawn 容器化 Android Studio
 
-## 关于本文
-
 - 发布于 2021 年 7 月 7 日
-- [源码][source]
-- [网页][page]以及[英文版][page_en]
+- [Markdown][raw]
+- [English][en]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/containerize-android-studio-with-systemd-nspawn/index.md
-[page_en]: https://liolok.com/containerize-android-studio-with-systemd-nspawn/
-[page]: https://liolok.com/zhs/containerize-android-studio-with-systemd-nspawn/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/containerize-android-studio-with-systemd-nspawn/index.md
+[en]: https://liolok.com/containerize-android-studio-with-systemd-nspawn/
 
 ## 创建 Btrfs 子卷
 
@@ -113,7 +110,6 @@ lang: zh-Hans
 ```console
 apt-get install libxext6 libxrender1 libxtst6 libxi6 libfreetype6
 ```
-
 
 Android Studio 终于启动了，然后马上又崩溃了。[日志](../../containerize-android-studio-with-systemd-nspawn/font.log)多次提到「字体」，于是尝试安装了 `fontconfig` 包，这次终于正常启动了。
 

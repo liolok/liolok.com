@@ -5,11 +5,9 @@ lang: zh-Hans
 # 饥荒联机版客户端模组推荐
 
 - 最初发布于 2022 年 2 月 23 日
-- [源码][source]
-- [网页][page]
+- [Markdown][raw]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/dont-starve-together-client-mod/index.md
-[page]: https://liolok.com/zhs/dont-starve-together-client-mod/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/dont-starve-together-client-mod/index.md
 
 ---
 
@@ -305,7 +303,6 @@ Tooltip 就是指光标悬停格子里的物品时，光标上方浮现的文字
 - [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2183209654)
 
 主要是用来快速输入表情符号，其他的功能还未探索。
-
 
 ### Connect Directly to My Server
 

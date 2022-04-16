@@ -1,14 +1,11 @@
 # Containerize Android Studio with systemd-nspawn
 
-## Meta Info
-
 - Published on July 7 of 2021
-- [Source code][source]
-- [Web page][page] and [zh-Hans version][page_zhs]
+- [Markdown][raw]
+- [Simplified Chinese][zhs]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/containerize-android-studio-with-systemd-nspawn/index.md
-[page]: https://liolok.com/containerize-android-studio-with-systemd-nspawn/
-[page_zhs]: https://liolok.com/zhs/containerize-android-studio-with-systemd-nspawn/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/containerize-android-studio-with-systemd-nspawn/index.md
+[zhs]: https://liolok.com/zhs/containerize-android-studio-with-systemd-nspawn/
 
 ## Create Btrfs Subvolume
 

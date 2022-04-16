@@ -4,16 +4,12 @@ lang: zh-Hans
 
 # V2Ray 订阅解析
 
-## 关于本文
-
 - 最初发布于 2019 年 11 月 18 日
-- [源码][source]
-- [网页][page]以及[英文版][page_en]
+- [Markdown][raw]
+- [English][en]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/v2ray-subscription-parse/index.md
-[page_en]: https://liolok.com/v2ray-subscription-parse/
-[page]: https://liolok.com/zhs/v2ray-subscription-parse/
-
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/v2ray-subscription-parse/index.md
+[en]: https://liolok.com/v2ray-subscription-parse/
 
 ## 前言
 

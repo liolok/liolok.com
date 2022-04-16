@@ -4,15 +4,12 @@ lang: zh-Hans
 
 # 在 Arch Linux VPS 上运行 Mastodon 服务端
 
-## 关于本文
-
 - 发布于 2019 年 12 月 8 日
-- [源码][source]
-- [网页][page]以及[英文版][page_en]
+- [Markdown][raw]
+- [English][en]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/run-mastodon-server-on-archlinux-vps/index.md
-[page_en]: https://liolok.com/run-mastodon-server-on-archlinux-vps/
-[page]: https://liolok.com/zhs/run-mastodon-server-on-archlinux-vps/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/run-mastodon-server-on-archlinux-vps/index.md
+[en]: https://liolok.com/run-mastodon-server-on-archlinux-vps/
 
 我现在使用 Docker 运行 Mastodon 了，本文仅留作参考。
 

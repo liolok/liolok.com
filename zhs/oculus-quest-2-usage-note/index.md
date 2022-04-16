@@ -4,15 +4,12 @@ lang: zh-Hans
 
 # Oculus Quest 2 使用笔记
 
-## 关于本文
-
 - 发布于 2020 年 11 月 13 日
-- [源码][source]
-- [网页][page]以及[英文版][page_en]
+- [Markdown][raw]
+- [English][en]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/oculus-quest-2-usage-note/index.md
-[page_en]: https://liolok.com/oculus-quest-2-usage-note/
-[page]: https://liolok.com/zhs/oculus-quest-2-usage-note/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/oculus-quest-2-usage-note/index.md
+[en]: https://liolok.com/oculus-quest-2-usage-note/
 
 ## Facebook 账户
 

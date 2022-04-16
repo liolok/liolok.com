@@ -4,16 +4,13 @@ lang: zh-Hans
 
 # 如何为 Hexo 博文加入图片
 
-## 关于本文
-
 - 最初发布于 2019 年 4 月 14 日
 - 最后更新于 2019 年 4 月 16 日
-- [源码][source]
-- [网页][page]以及[英文版][page_en]
+- [Markdown][raw]
+- [English][en]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/how-to-add-image-to-hexo-blog-post/index.md
-[page_en]: https://liolok.com/how-to-add-image-to-hexo-blog-post
-[page]: https://liolok.com/zhs/how-to-add-image-to-hexo-blog-post
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/how-to-add-image-to-hexo-blog-post/index.md
+[en]: https://liolok.com/how-to-add-image-to-hexo-blog-post
 
 ## Markdown 语法
 

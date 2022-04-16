@@ -1,14 +1,11 @@
 # V2Ray Subscription Parse
 
-## Meta Info
-
 - Published at Nov 18 of 2019
-- [Source code][source]
-- [Web page][page] and [zh-Hans version][page_zhs]
+- [Markdown][raw]
+- [Simplified Chinese][zhs]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/v2ray-subscription-parse/index.md
-[page]: https://liolok.com/v2ray-subscription-parse/
-[page_zhs]: https://liolok.com/zhs/v2ray-subscription-parse/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/v2ray-subscription-parse/index.md
+[zhs]: https://liolok.com/zhs/v2ray-subscription-parse/
 
 ## Preface
 

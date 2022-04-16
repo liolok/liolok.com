@@ -1,15 +1,12 @@
 # Build Blog with Hexo and GitHub Pages
 
-## Meta Info
-
 - Published at Apr 14 of 2018
 - Updated at Feb 18 of 2019
-- [Source code][source]
-- [Web page][page] and [zh-Hans version][page_zhs]
+- [Markdown][raw]
+- [Simplified Chinese][zhs]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/build-blog-with-hexo-and-github-pages/index.md
-[page]: https://liolok.com/build-blog-with-hexo-and-github-pages
-[page_zhs]: https://liolok.com/zhs/build-blog-with-hexo-and-github-pages
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/build-blog-with-hexo-and-github-pages/index.md
+[zhs]: https://liolok.com/zhs/build-blog-with-hexo-and-github-pages
 
 ## Local Hexo Instance
 

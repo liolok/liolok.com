@@ -1,14 +1,11 @@
 # Run SS and MTProxy Server on AWS
 
-## Meta Info
-
 - Published at Mar 23 of 2019
-- [Source code][source]
-- [Web page][page] and [zh-Hans version][page_zhs]
+- [Markdown][raw]
+- [Simplified Chinese][zhs]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/run-ss-and-mtproxy-server-on-aws/index.md
-[page]: https://liolok.com/run-ss-and-mtproxy-server-on-aws
-[page_zhs]: https://liolok.com/zhs/run-ss-and-mtproxy-server-on-aws
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/run-ss-and-mtproxy-server-on-aws/index.md
+[zhs]: https://liolok.com/zhs/run-ss-and-mtproxy-server-on-aws
 
 ## Signup an AWS account
 

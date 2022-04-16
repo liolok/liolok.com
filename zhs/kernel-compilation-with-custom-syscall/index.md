@@ -4,17 +4,13 @@ lang: zh-Hans
 
 # Linux 内核编译及添加系统调用
 
-## 关于本文
-
 杭电操作系统实验一，个人笔记。
 
 - 最初发布于 2018 年 7 月 22 日
 - 最后更新于 2020 年 12 月 12 日
-- [源码][source]
-- [网页][page]
+- [Markdown][raw]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/kernel-compilation-with-custom-syscall/index.md
-[page]: https://liolok.com/zhs/kernel-compilation-with-custom-syscall/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/kernel-compilation-with-custom-syscall/index.md
 
 ## 写在最前
 

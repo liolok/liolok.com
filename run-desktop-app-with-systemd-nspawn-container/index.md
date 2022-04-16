@@ -1,14 +1,10 @@
 # Run Desktop App with systemd-nspawn Container
 
-## Meta Info
-
 - Published at April 5 of 2020
 - Updated at May 28 of 2021
-- [Source code][source]
-- [Web page][page]
+- [Markdown][raw]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/run-desktop-app-with-systemd-nspawn-container/index.md
-[page]: https://liolok.com/run-desktop-app-with-systemd-nspawn-container/
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/run-desktop-app-with-systemd-nspawn-container/index.md
 
 ## Pros
 

@@ -4,16 +4,13 @@ lang: zh-Hans
 
 # 使用 Hexo 和 GitHub Pages 搭建博客
 
-## 关于本文
-
 - 最初发布于 2018 年 4 月 14 日
 - 最后更新于 2019 年 2 月 18 日
-- [源码][source]
-- [网页][page]以及[英文版][page_en]
+- [Markdown][raw]
+- [English][en]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/build-blog-with-hexo-and-github-pages/index.md
-[page_en]: https://liolok.com/build-blog-with-hexo-and-github-pages
-[page]: https://liolok.com/zhs/build-blog-with-hexo-and-github-pages
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/build-blog-with-hexo-and-github-pages/index.md
+[en]: https://liolok.com/build-blog-with-hexo-and-github-pages
 
 ## 本地 Hexo 实例
 

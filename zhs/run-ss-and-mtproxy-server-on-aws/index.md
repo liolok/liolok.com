@@ -4,15 +4,12 @@ lang: zh-Hans
 
 # 在 AWS 上运行 SS 和 MTProxy 服务端
 
-## 关于本文
-
 - 发布于 2019 年 3 月 23 日
-- [源码][source]
-- [网页][page]以及[英文版][page_en]
+- [Markdown][raw]
+- [English][en]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/run-ss-and-mtproxy-server-on-aws/index.md
-[page_en]: https://liolok.com/run-ss-and-mtproxy-server-on-aws
-[page]: https://liolok.com/zhs/run-ss-and-mtproxy-server-on-aws
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/run-ss-and-mtproxy-server-on-aws/index.md
+[en]: https://liolok.com/run-ss-and-mtproxy-server-on-aws
 
 请注意，本文所使用的工具早已过时，仅留作参考。
 - Shadowsocks 请使用官方的 [libev][ss-libev] 或者 [Rust][ss-rust] 版本；

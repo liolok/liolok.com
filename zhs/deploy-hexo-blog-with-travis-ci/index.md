@@ -4,15 +4,11 @@ lang: zh-Hans
 
 # 使用 Travis CI 部署 Hexo 博客
 
-## 关于本文
-
 - 最初发布于 2018 年 5 月 25 日
 - 最后更新于 2018 年 5 月 26 日
-- [源码][source]
-- [网页][page]
+- [Markdown][raw]
 
-[source]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/deploy-hexo-blog-with-travis-ci/index.md
-[page]: https://liolok.com/zhs/deploy-hexo-blog-with-travis-ci
+[raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/deploy-hexo-blog-with-travis-ci/index.md
 
 本人后来转用 GitHub Actions 或者 GitLab CI，本文仅留作参考。
 
