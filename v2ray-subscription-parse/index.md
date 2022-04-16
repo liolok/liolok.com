@@ -48,7 +48,7 @@ print(return_content)
 
 Now we should get a really long string that seems random, like this:
 
-![Base64 Example](./base64-example.png)
+![Base64 Example](./base64-example.webp)
 
 ### Get Share Links
 
@@ -62,7 +62,7 @@ print(share_links)
 
 This step we get a list of share link string:
 
-![Share Links](./share-links.png)
+![Share Links](./share-links.webp)
 
 ### Get Configurations
 
@@ -87,4 +87,4 @@ print(configs)
 
 Finally we get a list of json objects, each of them contains a server configuraion:
 
-![Configurations](./configurations.png)
+![Configurations](./configurations.webp)

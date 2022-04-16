@@ -27,7 +27,7 @@ lang: zh-Hans
 
 按照之前的流程，我们在本地目录创建一个基于 Hexo 框架的博客实例，然后进行配置与写作，本地预览调试觉得没问题可以上线博客了，再将博客生成静态网站文件并部署到 GitHub 的仓库上。不出意外的话，很快就能看到网站已经可以访问了。
 
-![旧的流程](old-workflow.png)
+![旧的流程](old-workflow.webp)
 
 上图中的部署（deploy）其实就是 Hexo 封装好的 `git push`，将生成好的静态文件目录 `./public` 推送（push）到配置好的仓库相应的分支上，参见前文中的[部署配置](https://liolok.com/zhs/build-blog-with-hexo-and-github-pages#部署配置)一节。
 
@@ -44,7 +44,7 @@ lang: zh-Hans
 那么如何实现呢？我参考了很多博文和讨论、看完了八仙过海之后，我个人的做法是：
 把博客源码推送到仓库的新建分支 source，并使用 Travis CI 将 source 分支里的博客源码自动部署到 master 分支。这样一来，重心放在博客本身上，后面的生成静态文件和部署，交给 Travis CI 去做，我们只看结果，没毛病就不问过程，想看过程也有日志可以看）。
 
-![较新的流程](new-workflow.png)
+![较新的流程](new-workflow.webp)
 
 ## 博客实例的版本控制
 
@@ -121,22 +121,22 @@ Travis CI 需要的 Token 才能有相应的权限替我们自动完成特定的
 
 进入账号的设置（settings），左侧菜单最下方的 Developer settings 选项，继续选择 Personal access tokens，通过右上方的 Generate new token 生成一个 Travis CI 自动部署博客专用的 Token。
 
-![生成 Token](new-token.png)
+![生成 Token](new-token.webp)
 
 如上图所示，填写 Token 用途后，选中 repo 权限即可，通过下方（权限列表略长，往下翻页即可）的 Generate token 按钮完成生成，并及时复制 Token，妥善保管。
 
-![复制 Token](copy-token.png)
+![复制 Token](copy-token.webp)
 
 ### Travis CI 线上配置
 
 #### 使用GitHub账号登入
-![使用 GitHub 账号登入 Travis CI](configure-travis-ci-0.png)
+![使用 GitHub 账号登入 Travis CI](configure-travis-ci-0.webp)
 
 #### 开启仓库的自动构建并进入详细设置
-![开启仓库的自动构建并进入详细设置](configure-travis-ci-1.png)
+![开启仓库的自动构建并进入详细设置](configure-travis-ci-1.webp)
 
 #### 详细设置及添加 Token
-![详细设置及添加 Token](configure-travis-ci-2.png)
+![详细设置及添加 Token](configure-travis-ci-2.webp)
 
 因为仓库下有两个分支：master 以及 source，开启上图中的「Build only if .travis.yml is present」选项，保证不包含 `.travis.yml` 配置文件的 master 分支不会被监测变动以致循环构建。
 

@@ -14,7 +14,7 @@
 
 A credit card is needed for signup the account, see support types below.
 
-![AWS Account Support Credit Card Types](./aws-credit-card-types.png)
+![AWS Account Support Credit Card Types](./aws-credit-card-types.webp)
 
 https://portal.aws.amazon.com/billing/signup
 
@@ -36,7 +36,7 @@ but also Google. Maybe I'll cover on that later.)
 
 Visit [this link][2] (from [ArchWiki][3]) and choose an image by region.
 
-![Choose Image](./choose-image.png)
+![Choose Image](./choose-image.webp)
 
 [2]: https://www.uplinklabs.net/projects/arch-linux-on-ec2/
 [3]: https://wiki.archlinux.org/index.php/Arch_Linux_AMIs_for_Amazon_Web_Services "Arch Linux AMIs for Amazon Web Services - ArchWiki"
@@ -46,22 +46,22 @@ Click on the "ami-xxxx" link and go on.
 
 ### Choose Instance Type
 
-![Choose Instance Type](./choose-instance-type.png)
+![Choose Instance Type](./choose-instance-type.webp)
 
 There would be only one free type so we actually have no choice, just skip to step 6.
 
 ### Add Traffic Rule
 
-![Add Traffic Rule](./add-traffic-rule.png)
+![Add Traffic Rule](./add-traffic-rule.webp)
 
-![Added Traffic Rule](./added-traffic-rule.png)
+![Added Traffic Rule](./added-traffic-rule.webp)
 
 (Well, I don't know how unsafe would it be if we allow all traffic from anywhere.
 If you care about security, read the documentations and make it secure.)
 
 ### Download Key File and Launch Instance
 
-![Download Key File and Launch](./download-key-file-and-launch.png)
+![Download Key File and Launch](./download-key-file-and-launch.webp)
 
 This `ArchVPS.pem` private key file is quite important, we download it to `~/.ssh/ArchVPS.pem`,
 or anywhere considered as safe and not easy to be cleared.
@@ -70,7 +70,7 @@ or anywhere considered as safe and not easy to be cleared.
 
 We can see the instance here after launched:
 
-![Get Instance IP](./get-instance-ip.png "Get Instance IP")
+![Get Instance IP](./get-instance-ip.webp "Get Instance IP")
 
 Now we've got the IP address of the instance, run this command to connect:
 
@@ -117,7 +117,7 @@ Do NOT read it online, download or just copy and paste it to your favorite edito
 For example in VS Code, switch to "JSON with Comments" language mode,
 and use folding to understand the hierarchy better.
 
-![Folding with VSCode](./folding-with-vscode.png "Folding with VSCode")
+![Folding with VSCode](./folding-with-vscode.webp "Folding with VSCode")
 
 These are what you need to know about in the `inbounds` part of template,
 which would also be used in client configuration:

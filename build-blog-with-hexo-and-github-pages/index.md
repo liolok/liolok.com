@@ -38,7 +38,7 @@ choose and install the latest 64-bit LTS version.
 After installation, run `node -v` and `npm -v` to verify
 both Node.js environment and its package manager:
 
-![Verify Node.js](verify-nodejs.png)
+![Verify Node.js](verify-nodejs.webp)
 
 #### Git
 
@@ -48,7 +48,7 @@ all these stuff could be configured later.
 
 Run `git --version` to verify installation:
 
-![Verify Git](verify-git.png)
+![Verify Git](verify-git.webp)
 
 Then configure the user name and email,
 the latter should be the same as your [GitHub commit email][gh-commit-email].
@@ -67,7 +67,7 @@ Run `npm install --global hexo-cli` and `hexo version` to install and verify Hex
 > There may be two warnings like below, saying that an **optional** dependency named `fsevent` was
 > skipped since it's macOS only (npm, you have to say, huh?). We can just **ignore** this.
 
-![Install and Verify Hexo](install-and-verify-hexo.png)
+![Install and Verify Hexo](install-and-verify-hexo.webp)
 
 ### Initialize Instance
 
@@ -75,7 +75,7 @@ Change to your preferred directory, and run `hexo init name` (use your preferred
 `npm install` to establish site and update dependencies. You can also make an empty subdirectory
 and run `hexo init` and `npm install` in it, I applied this method below:
 
-![Initialize Hexo Instance](initialize-hexo-site.png)
+![Initialize Hexo Instance](initialize-hexo-site.webp)
 
 Now we got a local folder containing a default blog's source.
 
@@ -88,7 +88,7 @@ use the `-p` option to set a different port.
 
 According to output, visit `http://localhost:4000`:
 
-![Preview Blog](preview-blog.png)
+![Preview Blog](preview-blog.webp)
 
 Preview operating would be frequent when managing blog,
 you may consider to write a script to save time.
@@ -112,7 +112,7 @@ soon we'll arrive at "*username*.github.io" online.
 [Create a new repository](https://github.com/new) like below,
 **replace** `username` with your own (**same** as `Owner` on the left).
 
-![Create Dedicated Repository](create-dedicated-repository.png)
+![Create Dedicated Repository](create-dedicated-repository.webp)
 
 ### Deploy Blog
 
@@ -145,7 +145,7 @@ Pay attention to syntax of YAML: the colon must be followed by a space.
 In site folder run `hexo deploy --generate` or its abbreviation `hexo d -g`,
 this lets Hexo generate the static files and then deploy blog to repository.
 
-![First Deployment](first-deployment.png)
+![First Deployment](first-deployment.webp)
 
 GitHub would verify your identity at first time as above, just login.
 

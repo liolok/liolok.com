@@ -140,7 +140,7 @@ Tooltip 就是指光标悬停格子里的物品时，光标上方浮现的文字
 - ID：`376333686`
 - [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=376333686)
 
-![我的 Combined Status 模组效果示意图](combined-status.png "我的 Combined Status 模组效果示意图")
+![我的 Combined Status 模组效果示意图](combined-status.webp "我的 Combined Status 模组效果示意图")
 
 增加右上角的状态信息显示，主要是以下几点：
 

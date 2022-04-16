@@ -31,7 +31,7 @@ $ yay --sync hexo-cli git npm
 
 然后就可以直接跳到[创建实例](#创建实例)步骤。
 
-![其他平台做得到吗](show-off-archlinux.png)
+![其他平台做得到吗](show-off-archlinux.webp)
 
 #### Node.js
 
@@ -39,7 +39,7 @@ $ yay --sync hexo-cli git npm
 
 安装完成后在命令提示符中使用 `node -v` 和 `npm -v` 验证 Node.js 环境及其包管理器：
 
-![验证 Node.js 环境配置](../../build-blog-with-hexo-and-github-pages/verify-nodejs.png)
+![验证 Node.js 环境配置](../../build-blog-with-hexo-and-github-pages/verify-nodejs.webp)
 
 #### Git
 
@@ -51,7 +51,7 @@ $ yay --sync hexo-cli git npm
 
 安装完成后在命令提示符中使用 `git --version` 验证安装：
 
-![验证 Git 安装](../../build-blog-with-hexo-and-github-pages/verify-git.png)
+![验证 Git 安装](../../build-blog-with-hexo-and-github-pages/verify-git.webp)
 
 配置用户信息，注意此处的邮箱应与你的 [GitHub commit email][gh-commit-email] 一致。
 
@@ -69,14 +69,14 @@ git config --global user.email "邮箱"
 > 在 Windows/Linux 平台上可能会有如下两个警告，提示已跳过可选依赖 `fsevent`，
 > 因其仅支持 macOS（那 npm 你还非得说）。**忽略**即可。
 
-![安装并验证 Hexo](../../build-blog-with-hexo-and-github-pages/install-and-verify-hexo.png)
+![安装并验证 Hexo](../../build-blog-with-hexo-and-github-pages/install-and-verify-hexo.webp)
 
 ### 创建实例
 
 在合适的目录下使用 `hexo init name`（自定义 name）和 `npm install` 创建博客实例并更新依赖。
 也可以先创建子目录并在其中使用 `hexo init` 和 `npm install`。下图中使用的是后一种方式：
 
-![创建 Hexo 实例](../../build-blog-with-hexo-and-github-pages/initialize-hexo-site.png)
+![创建 Hexo 实例](../../build-blog-with-hexo-and-github-pages/initialize-hexo-site.webp)
 
 现在我们得到的本地目录包含着一份默认的博客源码。
 
@@ -91,7 +91,7 @@ git config --global user.email "邮箱"
 
 根据命令的回显，访问 `http://localhost:4000`：
 
-![预览博客](../../build-blog-with-hexo-and-github-pages/preview-blog.png)
+![预览博客](../../build-blog-with-hexo-and-github-pages/preview-blog.webp)
 
 在管理博客的过程中，本地预览将会是频繁进行的操作。可以考虑写个脚本来节省时间。
 
@@ -113,7 +113,7 @@ organization, or project pages directly from **a GitHub repository**.*
 
 [创建仓库](https://github.com/new)，**替换** `username` 为你的用户名（即与左边的 `Owner` **一致**）。
 
-![创建专用仓库](../../build-blog-with-hexo-and-github-pages/create-dedicated-repository.png)
+![创建专用仓库](../../build-blog-with-hexo-and-github-pages/create-dedicated-repository.webp)
 
 ### 部署博客
 
@@ -142,7 +142,7 @@ deploy:
 
 在博客目录下运行 `hexo deploy --generate` 或其简写 `hexo d -g`，让 Hexo 在生成静态网站后，将其部署到仓库。
 
-![首次部署](../../build-blog-with-hexo-and-github-pages/first-deployment.png)
+![首次部署](../../build-blog-with-hexo-and-github-pages/first-deployment.webp)
 
 如上图所示，在第一次部署时会弹出 GitHub 的身份验证，登录即可。
 

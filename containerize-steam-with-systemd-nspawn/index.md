@@ -186,7 +186,7 @@ Here's complete steps to extract non-DRM version executable and replace then:
 
 Where is library folder? Go to "Settings->Downloads->Content Libraries" to open library folders configuration dialog:
 
-![library-folders](steam-library-folders.png)
+![library-folders](steam-library-folders.webp)
 
 ### Beholder
 

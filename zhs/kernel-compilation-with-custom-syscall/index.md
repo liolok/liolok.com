@@ -184,7 +184,7 @@ $ zcat /proc/config.gz > .config # use Arch Linux default configuration
 $ make nconfig # append your custom local version string
 ```
 
-![配置 local version](config-local-version.png)
+![配置 local version](config-local-version.webp)
 
 输入自定义的版本后缀后，按 F6 保存配置、F9 退出。
 
@@ -270,13 +270,13 @@ fallback_image="/boot/initramfs-linux-custom-fallback.img"
 
 重启后在 GRUB 引导菜单的高级选项中选择新编译安装好的内核：
 
-![GRUB 菜单 1](grub-menu-1.png)
+![GRUB 菜单 1](grub-menu-1.webp)
 
-![GRUB 菜单 2](grub-menu-2.png)
+![GRUB 菜单 2](grub-menu-2.webp)
 
 进入系统后使用 `uname --release` 命令可以看到之前自定义的版本号后缀，说明已切换至新内核：
 
-![验证内核](verify-kernel.png)
+![验证内核](verify-kernel.webp)
 
 ## 添加系统调用
 
@@ -302,7 +302,7 @@ $ cd ~/kernel-build/linux-$version # kernel source code directory
 
 系统调用的函数原型位于内核源码目录下的 `./include/linux/syscalls.h`：
 
-![函数原型](function-prototype.png)
+![函数原型](function-prototype.webp)
 
 ### 系统调用表
 
@@ -311,7 +311,7 @@ $ cd ~/kernel-build/linux-$version # kernel source code directory
 通用系统调用表位于 `./include/uapi/asm-generic/unistd.h`，
 按对应格式在列表末尾追加表项（**注意**也要相应的增加 `__NR_syscalls` 的值）：
 
-![通用系统调用表](syscall-table-generic.png)
+![通用系统调用表](syscall-table-generic.webp)
 
 #### x86 系统调用表
 
@@ -319,17 +319,17 @@ $ cd ~/kernel-build/linux-$version # kernel source code directory
 
 x86 架构的系统调用表位于 `./arch/x86/entry/syscalls/syscall_{64,32}.tbl` 两个文件中，按对应格式在列表末尾追加表项：
 
-![系统调用表（64 位）](syscall-table-64.png)
+![系统调用表（64 位）](syscall-table-64.webp)
 
 （`common` 代表 64 位版本的系统调用向旧兼容 32 位用户空间程序；如前文所说，我们自定义的简单系统调用可以通过内核的透明处理自动兼容。）
 
-![系统调用表（32 位）](syscall-table-32.png)
+![系统调用表（32 位）](syscall-table-32.webp)
 
 ### 入口点
 
 系统调用的入口点通常位于 `./kernel/sys.c` 文件中:
 
-![入口点](entry-point.png)
+![入口点](entry-point.webp)
 
 ```c
 /*
@@ -524,4 +524,4 @@ int main(void)
 
 在终端下编译运行并进行测试，结果如下：
 
-![测试系统调用](test-syscall.png)
+![测试系统调用](test-syscall.webp)

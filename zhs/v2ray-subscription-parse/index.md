@@ -53,7 +53,7 @@ print(return_content)
 
 应该得到一个极其长、看似随机的字符串，像下面这样：
 
-![Base64 示例](../../v2ray-subscription-parse/base64-example.png)
+![Base64 示例](../../v2ray-subscription-parse/base64-example.webp)
 
 ### 获取分享链接列表
 
@@ -67,7 +67,7 @@ print(share_links)
 
 这一步我们得到一个字符串列表，一堆分享链接：
 
-![分享链接](../../v2ray-subscription-parse/share-links.png)
+![分享链接](../../v2ray-subscription-parse/share-links.webp)
 
 ### 获取节点配置列表
 
@@ -92,4 +92,4 @@ print(configs)
 
 最后，我们得到一个 json 对象列表，其中每一个都包含一个节点配置：
 
-![节点配置列表](../../v2ray-subscription-parse/configurations.png)
+![节点配置列表](../../v2ray-subscription-parse/configurations.webp)

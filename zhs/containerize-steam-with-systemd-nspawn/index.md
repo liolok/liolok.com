@@ -188,7 +188,7 @@ SHA-256 校验和：`cdddfb30f50510afa389de4966089a1ac1a9a2bf09fb8d0aa0793178b08
 
 库文件夹在哪儿？到「设置 -> 下载 -> 内容库」打开配置对话框：
 
-![library-folders](steam-library-folders.png)
+![library-folders](steam-library-folders.webp)
 
 ### Beholder
 

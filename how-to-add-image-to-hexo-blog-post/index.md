@@ -21,7 +21,7 @@ Adding an image is supposed to be easy in markdown. Syntax is like: `![alt](path
 
 In this article I will mainly talk about the image file path or link or whatever you name it. But if you want to make a quick choice in different solutions, follow the map below and jump to the section directly.
 
-![Quick Choice](quick-choice.png "Make a Quick Choice")
+![Quick Choice](quick-choice.webp "Make a Quick Choice")
 
 ## Image Hosting Sevice
 
@@ -111,4 +111,4 @@ This type of root-relative link works in blog site, but basically not in editor 
 
 Here is the official [documentation](https://hexo.io/docs/asset-folders#Tag-Plugins-For-Relative-Path-Referencing "Tag Plugins For Relative Path Referencing") about this solution, I don't even want to write it down in my own blog. Here are top comments right below the docs:
 
-![Top Comments of Tag Syntax](top-commets-of-tag-syntax.png "Top comments of tag syntax")
+![Top Comments of Tag Syntax](top-commets-of-tag-syntax.webp "Top comments of tag syntax")

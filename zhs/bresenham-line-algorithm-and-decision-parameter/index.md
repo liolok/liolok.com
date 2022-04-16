@@ -35,7 +35,7 @@ void bresenhamLineOriginal(int x0, int y0, int x1, int y1)
 
 测试数据及效果图如下：
 
-![简单版本的算法效果图](example-simple.png "简单版本的算法效果图")
+![简单版本的算法效果图](example-simple.webp "简单版本的算法效果图")
 
 ## 推广算法
 
@@ -133,7 +133,7 @@ int main(int argc, char **argv)
 
 测试数据及效果图如下：
 
-![推广后的算法效果图](example-all-case.png "推广后的算法效果图")
+![推广后的算法效果图](example-all-case.webp "推广后的算法效果图")
 
 ## 决策参数
 
