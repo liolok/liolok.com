@@ -172,7 +172,7 @@ Solutions:
 
 Replace DRM version executable (5.1MiB) with non-DRM version (3.4MiB).
 
-I uploaded my non-DRM version executable [here](pvz-non-drm.tar) along with its SHA-256 checksum:
+I uploaded my non-DRM version executable [here](pvz-non-drm.tar.xz) along with its SHA-256 checksum:
 `cdddfb30f50510afa389de4966089a1ac1a9a2bf09fb8d0aa0793178b0814cd1`
 
 Here's complete steps to extract non-DRM version executable and replace then:

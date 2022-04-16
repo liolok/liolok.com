@@ -174,7 +174,7 @@ $codename $container_name $repository_url
 
 使用非 DRM 版本的可执行文件（3.4MiB）替换 DRM 版（5.1MiB）。
 
-我把自己的非 DRM 版可执行文件上传到了[这里](../../containerize-steam-with-systemd-nspawn/pvz-non-drm.tar)，附带了它的
+我把自己的非 DRM 版可执行文件上传到了这里：[pvz-non-drm.tar.xz](../../containerize-steam-with-systemd-nspawn/pvz-non-drm.tar.xz)，附带了它的
 SHA-256 校验和：`cdddfb30f50510afa389de4966089a1ac1a9a2bf09fb8d0aa0793178b0814cd1`
 
 下面是提取非 DRM 版可执行文件然后替换的完整步骤：
