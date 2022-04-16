@@ -54,11 +54,11 @@ Then the files in `source/_posts` should look like this:
 ```
 2019-02-14-Test-Post.md
 2019-02-14-Test-Post/
-+-- Test-Image-1.png
-+-- Test-Image-2.png
++-- Test-Image-1.webp
++-- Test-Image-2.webp
 +-- Subdirectory/
-|   +-- Test-Image-3.png
-|   +-- Test-Image-4.png
+|   +-- Test-Image-3.webp
+|   +-- Test-Image-4.webp
 ```
 
 You can see that post asset folder is besides the post source file, and has the same name with it.
@@ -74,19 +74,19 @@ $ npm i --save hexo-asset-link
 Then in markdown source file `source/_posts/2019-02-14-Test-Post.md`, the base-relative links scheme would look like this:
 
 ```md
-![](2019-02-14-Test-Post/Test-Image-1.png)
-![](./2019-02-14-Test-Post/Test-Image-2.png)
-![](2019-02-14-Test-Post/Subdirectory/Test-Image-3.png)
-![](./2019-02-14-Test-Post/Subdirectory/Test-Image-4.png)
+![](2019-02-14-Test-Post/Test-Image-1.webp)
+![](./2019-02-14-Test-Post/Test-Image-2.webp)
+![](2019-02-14-Test-Post/Subdirectory/Test-Image-3.webp)
+![](./2019-02-14-Test-Post/Subdirectory/Test-Image-4.webp)
 ```
 
 ### Relative Link Based on Post Asset Folder
 
 ```md
-![](Test-Image-1.png)
-![](./Test-Image-2.png)
-![](Subdirectory/Test-Image-3.png)
-![](./Subdirectory/Test-Image-4.png)
+![](Test-Image-1.webp)
+![](./Test-Image-2.webp)
+![](Subdirectory/Test-Image-3.webp)
+![](./Subdirectory/Test-Image-4.webp)
 ```
 
 > This type of base-relative link would only works on post page, not on home page excerption or editor preview.
