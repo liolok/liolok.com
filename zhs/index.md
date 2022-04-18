@@ -7,6 +7,7 @@ no_comment: true
 
 ## 文章
 
+- [修复个人网站失效链接](fix-broken-urls-of-my-site/)
 - [饥荒联机版客户端模组推荐](dont-starve-together-client-mod/)
 - [使用 systemd-nspawn 容器化 Steam](containerize-steam-with-systemd-nspawn/)
 - [折腾中国移动家用宽带](customize-china-mobile-home-broadband/)

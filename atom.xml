@@ -9,8 +9,15 @@
   <link href="https://liolok.com/" rel="alternate" />
   <link href="https://liolok.com/atom.xml" rel="self" />
   <icon>https://liolok.com/favicon.ico</icon>
-  <rights>© 2018 - 2021 liolok</rights>
-  <updated>2021-08-31T10:00:00Z</updated>
+  <rights>© 2018 - 2022 liolok</rights>
+  <updated>2022-04-18T10:25:25+0800</updated>
+
+  <entry>
+    <published>2022-04-18T10:25:25+0800</published>
+    <title>Fix Broken URLs of My Site</title>
+    <id>https://liolok.com/fix-broken-urls-of-my-site/</id>
+    <link href="https://liolok.com/fix-broken-urls-of-my-site/" rel="alternate" />
+  </entry>
 
   <entry>
     <updated>2021-08-31T10:00:00Z</updated>

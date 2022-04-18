@@ -10,7 +10,14 @@
   <link href="https://liolok.com/zhs/atom.xml" rel="self" />
   <icon>https://liolok.com/favicon.ico</icon>
   <rights>© 2018 - 2022 李皓奇</rights>
-  <updated>2022-02-23T06:00:00+08:00</updated>
+  <updated>2022-04-18T10:45:33+0800</updated>
+
+  <entry>
+    <published>2022-04-18T10:45:33+0800</published>
+    <title>修复个人网站失效链接</title>
+    <id>https://liolok.com/zhs/fix-broken-urls-of-my-site/</id>
+    <link href="https://liolok.com/zhs/fix-broken-urls-of-my-site/" rel="alternate" />
+  </entry>
 
   <entry>
     <updated>2022-02-23T06:00:00+08:00</updated>
