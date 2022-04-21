@@ -1,7 +1,7 @@
 # Containerize Steam with systemd-nspawn
 
-- Published on August 16 of 2021
-- Updated on August 31 of 2021
+- Published: 2021-08-16
+- Updated: 2021-08-31
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 

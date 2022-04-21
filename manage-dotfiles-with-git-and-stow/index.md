@@ -1,6 +1,6 @@
 # Manage Dotfiles with Git and Stow
 
-- Published at Sep 28 of 2019
+- Published: 2019-09-28
 - [Markdown][raw]
 
 [raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/manage-dotfiles-with-git-and-stow/index.md

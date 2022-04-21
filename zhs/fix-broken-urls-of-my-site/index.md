@@ -4,10 +4,12 @@ lang: zh-Hans
 
 # 修复个人网站失效链接
 
-- 发布于：2022-04-18
+- 发布于 2022 年 4 月 18 日
 - [Markdown][raw]
+- [English][en]
 
 [raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/fix-broken-urls-of-my-site/index.md
+[en]: https://liolok.com/fix-broken-urls-of-my-site/
 
 ## 起因
 

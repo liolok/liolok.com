@@ -6,8 +6,8 @@ lang: zh-Hans
 
 杭电操作系统实验一，个人笔记。
 
-- 最初发布于 2018 年 7 月 22 日
-- 最后更新于 2020 年 12 月 12 日
+- 发布于 2018 年 07 月 22 日
+- 更新于 2020 年 12 月 12 日
 - [Markdown][raw]
 
 [raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/kernel-compilation-with-custom-syscall/index.md

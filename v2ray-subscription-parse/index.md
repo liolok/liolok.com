@@ -1,6 +1,6 @@
 # V2Ray Subscription Parse
 
-- Published at Nov 18 of 2019
+- Published: 2019-11-08
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 

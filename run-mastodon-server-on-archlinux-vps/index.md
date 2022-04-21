@@ -1,6 +1,6 @@
 # Run Mastodon Server on Arch Linux VPS
 
-- Published at Dec 08 of 2019
+- Published: 2019-12-08
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 

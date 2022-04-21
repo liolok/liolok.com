@@ -1,6 +1,6 @@
 # Run SS and MTProxy Server on AWS
 
-- Published at Mar 23 of 2019
+- Published: 2019-03-23
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 

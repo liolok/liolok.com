@@ -1,6 +1,6 @@
 # Install Arch Linux on Acer Swift 3 SF313-52
 
-- Published at Feb 28 of 2020
+- Published: 2020-02-28
 - [Markdown][raw]
 
 [raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/install-archlinux-on-acer-swift-3-sf313-52/index.md

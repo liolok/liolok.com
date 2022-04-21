@@ -4,8 +4,8 @@ lang: zh-Hans
 
 # 使用 Hexo 和 GitHub Pages 搭建博客
 
-- 最初发布于 2018 年 4 月 14 日
-- 最后更新于 2019 年 2 月 18 日
+- 发布于 2018 年 4 月 14 日
+- 更新于 2019 年 2 月 18 日
 - [Markdown][raw]
 - [English][en]
 

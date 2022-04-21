@@ -2,8 +2,10 @@
 
 - Published: 2022-04-18
 - [Markdown][raw]
+- [Simplified Chinese][zhs]
 
 [raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/fix-broken-urls-of-my-site/index.md
+[zhs]: https://liolok.com/zhs/fix-broken-urls-of-my-site/
 
 ## Problem
 

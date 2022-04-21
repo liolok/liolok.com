@@ -1,6 +1,6 @@
 # Set Environment Variables with pam_env
 
-- Published at Aug 10 of 2020
+- Published: 2020-08-10
 - [Markdown][raw]
 
 [raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/set-environment-variables-with-pam-env/index.md

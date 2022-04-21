@@ -1,7 +1,7 @@
 # Build Blog with Hexo and GitHub Pages
 
-- Published at Apr 14 of 2018
-- Updated at Feb 18 of 2019
+- Published: 2018-04-14
+- Updated: 2019-02-18
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 

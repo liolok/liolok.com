@@ -4,7 +4,7 @@ lang: zh-Hans
 
 # V2Ray 订阅解析
 
-- 最初发布于 2019 年 11 月 18 日
+- 发布于 2019 年 11 月 18 日
 - [Markdown][raw]
 - [English][en]
 

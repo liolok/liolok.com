@@ -4,8 +4,8 @@ lang: zh-Hans
 
 # 使用 Travis CI 部署 Hexo 博客
 
-- 最初发布于 2018 年 5 月 25 日
-- 最后更新于 2018 年 5 月 26 日
+- 发布于 2018 年 5 月 25 日
+- 更新于 2018 年 5 月 26 日
 - [Markdown][raw]
 
 [raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/deploy-hexo-blog-with-travis-ci/index.md

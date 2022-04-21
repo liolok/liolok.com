@@ -1,6 +1,6 @@
 # Oculus Quest 2 Usage Note
 
-- Published at Nov 13 of 2020
+- Published: 2020-11-13
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 

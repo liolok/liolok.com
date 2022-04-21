@@ -1,7 +1,7 @@
 # How to Add Image to Hexo Blog Post
 
-- Published at Apr 14 of 2019
-- Updated at Apr 16 of 2019
+- Published: 2019-04-14
+- Updated: 2019-04-16
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 

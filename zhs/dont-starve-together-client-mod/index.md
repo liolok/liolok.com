@@ -4,7 +4,7 @@ lang: zh-Hans
 
 # 饥荒联机版客户端模组推荐
 
-- 最初发布于 2022 年 2 月 23 日
+- 发布于 2022 年 2 月 23 日
 - [Markdown][raw]
 
 [raw]: https://raw.githubusercontent.com/liolok/liolok.com/master/zhs/dont-starve-together-client-mod/index.md

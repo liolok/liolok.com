@@ -1,6 +1,6 @@
 # Containerize Android Studio with systemd-nspawn
 
-- Published on July 7 of 2021
+- Published: 2021-07-07
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 
