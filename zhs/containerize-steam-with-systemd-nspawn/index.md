@@ -5,7 +5,7 @@ lang: zh-Hans
 # 使用 systemd-nspawn 容器化 Steam
 
 - 发布于 2021 年 8 月 16 日
-- 更新于 2021 年 8 月 31 日
+- 更新于 2022 年 7 月 02 日
 - [Markdown][raw]
 - [English][en]
 
@@ -52,10 +52,10 @@ lang: zh-Hans
 
 > 参考：[systemd-nspawn - ArchWiki](https://wiki.archlinux.org/title/Systemd-nspawn#Create_a_Debian_or_Ubuntu_environment)
 
-当前最新的长期支持版 Ubuntu 代号为 `focal`。随你选用喜欢的仓库地址。
+当前最新的长期支持版 Ubuntu 代号为 `jammy`。随你选用喜欢的仓库地址。
 
 ```console
-# codename=focal
+# codename=jammy
 # repository_url='https://mirrors.ustc.edu.cn/ubuntu/'
 # debootstrap --include=systemd-container \
 --components=main,universe,multiverse \
@@ -81,17 +81,17 @@ $codename $container_name $repository_url
 在容器内，[启用 32 位架构][multiarch]并从 Ubuntu 官方仓库安装[软件包][package]：
 
 [multiarch]: https://wiki.debian.org/Multiarch/Implementation#Using_multiarch
-[package]: https://packages.ubuntu.com/focal/steam
+[package]: https://packages.ubuntu.com/jammy/steam
 
 ```console
 # dpkg --add-architecture i386
-# apt-get update
-# apt-get install steam
+# apt update
+# apt install steam
 ```
 
 根据[文件列表][filelist]判断，Steam 的启动脚本位于 `/usr/games/steam`。我们创建一个符号链接以便启动：
 
-[filelist]: https://packages.ubuntu.com/focal/i386/steam/filelist
+[filelist]: https://packages.ubuntu.com/jammy/i386/steam/filelist
 
 ```console
 # file /usr/games/steam
@@ -102,7 +102,7 @@ $codename $container_name $repository_url
 
 ```console
 # useradd --create-home steam
-# su --login steam --shell /bin/bash
+# su --login steam
 # mkdir --parents ~/.config ~/.local/share
 ```
 
@@ -132,6 +132,11 @@ $codename $container_name $repository_url
   - NVIDIA：`--bind=/dev/nvidia0` 以此类推
 - 访问权限：`--property=DeviceAllow='char-drm rw'`
 
+> N 卡用户注意事项：
+> 1. ~~别用 N 卡，会变得不幸~~
+> 2. 把 `/dev/nvidia*` 全都挂上
+> 3. 确保容器内的用户空间驱动版本与主机的内核模块版本完全一致
+
 ### 手柄
 
 - 设备文件：`--bind-ro=/dev/input/js0` 以此类推
@@ -157,7 +162,7 @@ $codename $container_name $repository_url
 [fmod]: https://wiki.archlinux.org/title/Steam/Troubleshooting#FMOD_sound_engine
 
 解决方案：
-- Debian/Ubuntu: `apt-get install pulseaudio`
+- Debian/Ubuntu: `apt install pulseaudio`
 - Arch Linux: `pacman --sync pulseaudio-alsa --assume-installed pulseaudio`
 
 <!-- #### CJK Font Messed Up -->

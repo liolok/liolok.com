@@ -1,7 +1,7 @@
 # Containerize Steam with systemd-nspawn
 
 - Published: 2021-08-16
-- Updated: 2021-08-31
+- Updated: 2022-07-02
 - [Markdown][raw]
 - [Simplified Chinese][zhs]
 
@@ -48,11 +48,11 @@ Then it will be easy to [snapshot][snapshot] and [migrate][migrate] the containe
 
 > Reference: [systemd-nspawn - ArchWiki](https://wiki.archlinux.org/title/Systemd-nspawn#Create_a_Debian_or_Ubuntu_environment)
 
-Codename of current latest LTS version of Ubuntu is `focal`.
+Codename of current latest LTS version of Ubuntu is `jammy`.
 Feel free to use your preferred repository.
 
 ```console
-# codename=focal
+# codename=jammy
 # repository_url='https://mirrors.ustc.edu.cn/ubuntu/'
 # debootstrap --include=systemd-container \
 --components=main,universe,multiverse \
@@ -78,17 +78,17 @@ Without `en_US.UTF-8` locale, steam will complain some errors.
 Inside container, [enable i386 architecture][multiarch] and install the [package][package] from Ubuntu official repository:
 
 [multiarch]: https://wiki.debian.org/Multiarch/Implementation#Using_multiarch
-[package]: https://packages.ubuntu.com/focal/steam
+[package]: https://packages.ubuntu.com/jammy/steam
 
 ```console
 # dpkg --add-architecture i386
-# apt-get update
-# apt-get install steam
+# apt update
+# apt install steam
 ```
 
 According to [file list][filelist], its startup script is located at `/usr/games/steam`. Let's create a symbol link to make it convenient to launch:
 
-[filelist]: https://packages.ubuntu.com/focal/i386/steam/filelist
+[filelist]: https://packages.ubuntu.com/jammy/i386/steam/filelist
 
 ```console
 # file /usr/games/steam
@@ -99,7 +99,7 @@ Inside container, add a dedicated normal user named "steam" and create user base
 
 ```console
 # useradd --create-home steam
-# su --login steam --shell /bin/bash
+# su --login steam
 # mkdir --parents ~/.config ~/.local/share
 ```
 
@@ -130,6 +130,11 @@ actually write up a shell script to run Steam in GUI.
   - For NVIDIA: `--bind=/dev/nvidia0` and so on
 - Access: `--property=DeviceAllow='char-drm rw'`
 
+> Note for NVIDIA card user:
+> 1. ~~Stop using it and save your time~~
+> 2. Mount `/dev/nvidia*`
+> 3. Make sure user space driver version is exactly the same with kernel module in host.
+
 ### Joysticks
 
 - Device files: `--bind-ro=/dev/input/js0` and so on
@@ -156,7 +161,7 @@ It doesn't play any audio and constantly resets volumes to 0.
 [fmod]: https://wiki.archlinux.org/title/Steam/Troubleshooting#FMOD_sound_engine
 
 Solutions:
-- Debian/Ubuntu: `apt-get install pulseaudio`
+- Debian/Ubuntu: `apt install pulseaudio`
 - Arch Linux: `pacman --sync pulseaudio-alsa --assume-installed pulseaudio`
 
 <!-- #### CJK Font Messed Up -->
