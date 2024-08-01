@@ -87,7 +87,7 @@ it would be much more flexible and less hard-coded to run command in shell scrip
 
 ### Environment Variables
 
-`--set-env=`, `-E` in command options or `Environment=` in `[Exec]` section of configurations.
+`--setenv=`, `-E` in command options or `Environment=` in `[Exec]` section of configurations.
 
 ## Access Control
 
@@ -179,7 +179,7 @@ For example, my AMD graphic card and joysticks:
 
 Pass X server temporary directory and `DISPLAY` environment variable on host to container:
 
-`--bind-ro=/tmp/.X11-unix/` and `--set-env=DISPLAY=$DISPLAY`
+`--bind-ro=/tmp/.X11-unix/` and `--setenv=DISPLAY=$DISPLAY`
 
 or in configuration file:
 
@@ -206,8 +206,8 @@ $ xauth nextract - "$DISPLAY" | sed -e 's/^..../ffff/' | xauth -f "$auth_file" n
 > --directory=$container_name \
 > --bind=/tmp/.X11-unix \
 > --bind="$auth_file" \
-> --set-env=DISPLAY="$DISPLAY" \
-> --set-env=XAUTHORITY="$auth_file"
+> --setenv=DISPLAY="$DISPLAY" \
+> --setenv=XAUTHORITY="$auth_file"
 ```
 
 ## Prepare Application
@@ -228,7 +228,7 @@ fi
 container_bus=/run/user/host/bus
 sudo systemd-nspawn --directory=$container_name \
 --bind-ro=$host_bus:$container_bus \
---set-env=DBUS_SESSION_BUS_ADDRESS=unix:path=$container_bus
+--setenv=DBUS_SESSION_BUS_ADDRESS=unix:path=$container_bus
 ```
 
 ### PulseAudio
