@@ -26,5 +26,6 @@
     "lang": "zh-Hans",
     "name": "liolok.com/zhs/",
     "short_name": "李皓奇",
-    "start_url": "/zhs/"
+    "start_url": "/zhs/",
+    "theme_color": "white"
 }

@@ -26,5 +26,6 @@
     "lang": "en",
     "name": "liolok.com",
     "short_name": "liolok",
-    "start_url": "/"
+    "start_url": "/",
+    "theme_color": "white"
 }
