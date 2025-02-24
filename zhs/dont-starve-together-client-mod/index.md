@@ -5,7 +5,7 @@ lang: zh-Hans
 # 饥荒联机版客户端模组自用列表
 
 - 发布于 2022 年 2 月 23 日
-- 更新于 2024 年 7 月 11 日
+- 更新于 2025 年 2 月 25 日
 - [Markdown][raw]
 - [Steam 创意工坊合集](https://steamcommunity.com/sharedfiles/filedetails/?id=2761751472)
 
@@ -118,24 +118,16 @@ lang: zh-Hans
 当一把武器打坏之后会自动装备上另一把同种武器。
 默认自动选用耐久度最低的那一把，在设置中可以关闭。
 
-## Auto Refuel
+## Auto-Refuel Stuff
 
 > 关键词：自动操作、装备、燃料
 
-- ID：`2130351510`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2130351510)
+- ID：`3310576763`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3310576763)
 
-自动为以下装备添加燃料：
-- 魔光护符
-- 懒人护符
-- 矿灯帽
-- 提灯
-- 鼹鼠帽
-- 骨甲
-- 警钟
-- 暗影秘典
+自动添加燃料、使用修复套件、给眼面具和恐怖盾牌喂食、使用胶带/针线包修理衣物。
 
-每一种装备都有对应的设置，可以调整是否自动添加以及百分比阈值。
+支持使用纯粹恐惧，每个装备也都有单独的阈值可以调整。
 
 ## Auto Replace Bone Armor
 
@@ -183,18 +175,14 @@ lang: zh-Hans
 
 ![](boss-calendar.webp)
 
-<!-- 失效
-## Buff Timer
+## Brightshade Timer & Warning
 
-> 关键词：信息、界面、计时、文字提醒
+> 关键词：信息、界面、计时、提醒
 
-- ID：`2905304624`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2905304624)
+- ID：`3407491034`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3407491034)
 
-吃了各种增益效果的食物之后，在左上角显示一个增益剩余时长的界面。
-
-![](buff-timer.webp)
--->
+致命亮茄突刺的提前预警，可以有效防止反伤。
 
 ## Bundle First
 
@@ -206,15 +194,6 @@ lang: zh-Hans
 使用 Shift + 鼠标左键点击（物品栏、背包、箱子等等）格子里的物品对其进行移动操作时，
 打开的捆绑包裹（打包袋/打包纸）的优先级为最高。
 
-## Burning Timer
-
-> 关键词：信息、文字提醒
-
-- ID：`2525856394`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2525856394)
-
-在所有燃烧的地方显示一个燃尽的倒计时，包括点燃的树木、矮星/极光、火堆、放在地上的提灯这些。
-
 ## Character Indicators
 
 > 关键词：界面、图标
@@ -225,7 +204,7 @@ lang: zh-Hans
 原生的附近玩家指示图标只显示角色的原版皮肤头像，这个模组给人物头像加上了对应的皮肤。
 不同的玩家使用不同的角色一般都会区分皮肤，这样也方便辨认。
 
-## Circular Placement (圆形摆放辅助)
+## Circular Placement（圆形摆放辅助）
 
 > 关键词：界面、建造、放置
 
@@ -268,6 +247,13 @@ lang: zh-Hans
 - 人物专属数值（位置在三维左方）
 - （可以）隐藏时钟上的世界天数，光标悬停时再显示。
 
+## Connection Manager（直连管理器）
+
+- ID：`2059140073`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2059140073)
+
+使用图形界面替代控制台直连，还支持在计分板保存当前正在游玩的世界。
+
 ## Craft Pot
 
 > 关键词：信息、界面
@@ -278,16 +264,6 @@ lang: zh-Hans
 打开烹饪锅时在右侧显示一个食谱列表，实时预测当前锅内的食材会烹饪出哪（几）种料理，
 并在更右侧的详情界面展示食谱详情、料理的三维变动。
 
-<!-- ## Disable Auto Filter-Change
-
-> 关键词：制作栏
-
-- ID：`3014133351`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3014133351)
-
-靠近各种制作站时，制作栏会自动切换到对应的过滤器/分类，这个模组的功能就是禁用这个自动切换。
-仍然可以点击左上方的按钮手动切换哦，位置就在收藏和搜索栏之间。 -->
-
 ## Display Light Radius
 
 > 关键词：界面、范围、按键绑定
@@ -296,27 +272,6 @@ lang: zh-Hans
 - [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2793848648)
 
 默认绑定 R 键（强烈建议改成 L 之类的）切换显示附近所有光源的照明范围，测试建家时比较实用。
-
-## Domestication Calculator
-
-> 关键词：界面、文字、信息、反向推算、驯牛
-
-- ID：`2622561786`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2622561786)
-
-从骑上牛的时刻开始默默计时，到被牛甩下时进行反向推算，并在人物头顶显示驯化度的大概数值。
-
-<!-- ## Entity Indicators
-
-> 关键词：界面、图标
-
-- ID：`2342521033`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2342521033)
-
-像原生设计中的附近玩家指示图标一样，指示屏幕范围外附近的各种特殊生物。主要是各种 Boss 级别的大型生物，
-也可以指示一些其他的实体比如切斯特、可疑的大理石等等，帮助玩家快速定位、规避风险。
-
-> 点评：考虑再三之后我觉得这个模组的效果某种意义上已经跟超大视野没区别了，所以我就没再开启。 -->
 
 ## Gardeneer Hat
 
@@ -448,6 +403,24 @@ Shift + 鼠标左键即可批量拾取对应物品。
 
 威尔逊、伍迪、沃尔夫冈、沃姆伍德（在进入游戏后）立即获得全部 15 个洞察点并解锁所有亲和力路径。
 
+## Item Meta
+
+> 关键词：信息、界面
+
+- ID：`3304170027`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3304170027)
+
+显示物品的基本信息
+
+## Message Bottle Indicator
+
+> 关键词：信息、界面
+
+- ID：`3289111378`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3289111378)
+
+瓶中信指示器。只会处理海面上的瓶中信，放在地上的不会管。
+
 ## Misclick Protection
 
 > 关键词：操作、误触
@@ -477,25 +450,14 @@ Shift + 鼠标左键即可批量拾取对应物品。
 - 自动翻脚印（可疑的土堆）并追踪
 - 自动将牛绑到美妆台或者解绑
 
-## Mute Flies
+## Nightberry Beta Filter
 
-> 关键词：静音
+> 关键词：信息、界面
 
-- ID：`1213299911`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=1213299911)
+- ID：`3283692696`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3283692696)
 
-静音便便/鸟粪的苍蝇嗡嗡声，平时地上的便便不一定能做到及时清理，时间久一点简直令人抓狂。
-效果来讲，还是能听到第一声（作为提示？），但是起码不会饱受长时间的摧残了。
-
-## Mute Pack
-
-> 关键词：静音
-
-- ID：`1740358195`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=1740358195)
-
-这个模组里面包含了相当多的音效，但也不是全部，而且也已经停更了。
-我用来静音秃鹰，这玩意实在是太吵了，对了还有露西斧。
+让夜莓的夜视滤镜变得不那么辣眼睛
 
 ## Nightmare Phase Indicator
 
@@ -507,15 +469,6 @@ Shift + 鼠标左键即可批量拾取对应物品。
 可以配合下文中的 Status Announcements 模组将当前阶段以及剩余时长作为消息发送聊天。
 
 > 建议：调成中文的话，快捷宣告发出的消息语法是破碎的，我反正是~~用默认英语~~自行修正翻译代码了。
-
-## No More Rooster Noise
-
-> 关键词：静音、宠物
-
-- ID：`2088731377`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2088731377)
-
-所有宠物要食静音，另静音友好果蝇的呼噜声。
 
 ## Non-Clickable Balloons
 
@@ -587,25 +540,22 @@ Shift + 鼠标左键即可批量拾取对应物品。
 
 在所有玩家角色上方显示昵称。默认也显示自己的，可以在模组设置中关掉。
 
-## Skin Queue
-
-> 关键词：界面、操作
-
-- ID：`1557935632`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=1557935632)
-
-把所有皮肤相关的编制/拆解操作放到后台进行，这样就可以快速批量操作了。
-并且增加了一个「拆解所有重复皮肤」的按钮。
-
-<!-- ## Snapping Tills
+## Snapping Tills
 
 > 关键词：操作、按键绑定
 
-- ID：`2994102885`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2994102885)
+- ID：`2302837868`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2302837868)
 
 需要把 Geometric Placement 模组的 Snap Till 功能关闭才可以使用本模组。
-默认绑定 L 键切换锄地布局：关闭、最佳、4x4、3x3、2x2 和六边形（一田十坑）。 -->
+默认绑定 L 键切换锄地布局：关闭、最佳、4x4、3x3、2x2 和六边形（一田十坑）。
+
+## Snow Tile Disabler
+
+- ID：`822508420`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=822508420)
+
+禁用冬季地面的积雪效果，可以在模组设置里调整积雪覆盖程度。
 
 ## Stat Change Display
 
@@ -615,6 +565,13 @@ Shift + 鼠标左键即可批量拾取对应物品。
 - [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=1876137475)
 
 在右上角三维图标处实时浮现所有的三维变动数值。
+
+## Stats Alert
+
+- ID：`3323954710`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3323954710)
+
+三维数值低到一定程度时在屏幕上方发出警告。
 
 ## Status Announcements
 
@@ -644,18 +601,6 @@ Alt + Shift + 左键点击格子里的物品，
 - ID：`2784715091`
 - [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2784715091)
 
-## Thermal Stone Timer
-
-> 关键词：文字
-
-- ID：`2796352661`
-- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2796352661)
-
-当暖石的温度接近气温时显示计时器。计时是一个近似值，并不精确。
-没有考虑世界温度的变化，也没有考虑到站在热源或冷源旁边片刻所带来的微小温度变化。
-
-> 点评：主要就是用来提醒玩家得开始寻找新的冷源/热源了。
-
 ## Tool Safety
 
 > 关键词：操作
@@ -671,6 +616,15 @@ Alt + Shift + 左键点击格子里的物品，
 - [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2501419004)
 
 给交易小屋的物品加了个排序
+
+## UI 拖拽缩放
+
+> 关键词：界面
+
+- ID：`2885137047`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=2885137047)
+
+拖动各种界面元素的位置，让他们更合心意。
 
 ## Wanda Age Ticking
 
@@ -730,6 +684,16 @@ Alt + Shift + 左键点击格子里的物品，
 - [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3020497678)
 
 食用物品栏中的变身雕像前自动卸下装备，以防掉落。
+
+## 噪声静音
+
+> 关键词：静音
+
+- ID：`1986606066`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=1986606066)
+
+由我全新重制的静音模组，按照大众以及个人需求进行适配。
+猜你嫌吵的有苍蝇、友好果蝇、格罗姆、主菜单背景音乐、宠物饥饿叫声、锯马。还有更多选项。
 
 ## 右键给阿比盖尔使用药水
 
@@ -792,6 +756,13 @@ Alt + Shift + 左键点击格子里的物品，
 2. 沃托克斯鼠标右键双击可以灵魂跳跃
 3. 优先跟随卵石路加速，避开减速蜘蛛网（韦伯则不会）
 
+## 自动领取每周礼物
+
+- ID：`3422869992`
+- [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3422869992)
+
+无需科学机器即可获得每周皮肤！
+
 ## 范围显示
 
 > 关键词：界面、范围、按键绑定
@@ -799,13 +770,15 @@ Alt + Shift + 左键点击格子里的物品，
 - ID：`3066199391`
 - [链接](https://steamcommunity.com/sharedfiles/filedetails/?id=3066199391)
 
-通过点击、部署、光标覆盖来显示各种范围。
-- 默认使用鼠标中键点击物体，显示/隐藏其范围。
-（如有冲突可改为左键/右键/侧键以及配置组合键）
-- 默认绑定 F5，按下可隐藏所有范围、显示大部分范围。
-- 部署（建造/种植）时，显示对应范围。
+功能介绍：
+- 默认使用鼠标中键点击物体，显示/隐藏其范围。双击可切换显示所有同类物体的范围。
+  - （如有冲突可改为左键/右键/侧键以及配置组合键）
+- 默认绑定 F5，按下可关闭视野内所有范围显示。
+  - （支持在设置 > 控制页面底部实时调整键位绑定）
+- 部署/建造/种植时，显示对应范围。
+  - （几何放置模组的常青树树苗按钮会将其隐藏）
 - 光标移至格子里物品上方，显示其范围。
-（该功能可部分禁用或完全禁用）
+  - （该功能可部分禁用或完全禁用）
 
 ## 角色按键绑定
 
@@ -833,7 +806,7 @@ Alt + Shift + 左键点击格子里的物品，
   - 不老表（推荐 R 键）
   - 复活队友
   - 溯源表
-- 沃托克斯：
+- 沃拓克斯：
   - 快速丢弃灵魂（推荐 R 键）
 - 沃尔夫冈：
   - 举哑铃（推荐 R 键）
