@@ -7,6 +7,7 @@ no_comment: true
 
 ## 文章
 
+- [饥荒联机版个人笔记](dont-starve-together-note/)
 - [修复个人网站失效链接](fix-broken-urls-of-my-site/)
 - [饥荒联机版客户端模组自用列表](dont-starve-together-client-mod/)
 - [使用 systemd-nspawn 容器化 Steam](containerize-steam-with-systemd-nspawn/)
